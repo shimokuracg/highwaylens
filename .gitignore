@@ -34,6 +34,10 @@ data/
 !data/processed/
 data/processed/*
 !data/processed/*.geojson
+# Keep SRTM DEM tiles (~26MB) for terrain calculation
+!data/dem/
+data/dem/*
+!data/dem/*.zip
 
 # OS
 .DS_Store

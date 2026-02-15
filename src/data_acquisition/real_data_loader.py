@@ -25,6 +25,7 @@ class RealDEMLoader:
     """Load real SRTM DEM data and calculate slopes."""
 
     SNAP_DEM_DIR = Path.home() / ".snap/auxdata/dem/SRTM 1Sec HGT"
+    PROJECT_DEM_DIR = Path(__file__).parent.parent.parent / "data" / "dem"
 
     def __init__(self):
         self.dem_cache = {}  # Cache loaded DEM tiles
@@ -43,11 +44,13 @@ class RealDEMLoader:
         if tile_name in self.dem_cache:
             return self.dem_cache[tile_name]
 
-        # Try to find the tile
-        zip_path = self.SNAP_DEM_DIR / f"{tile_name}.SRTMGL1.hgt.zip"
-
+        # Try to find the tile: project dir first, then SNAP cache
+        zip_name = f"{tile_name}.SRTMGL1.hgt.zip"
+        zip_path = self.PROJECT_DEM_DIR / zip_name
         if not zip_path.exists():
-            logger.warning(f"DEM tile not found: {zip_path}")
+            zip_path = self.SNAP_DEM_DIR / zip_name
+        if not zip_path.exists():
+            logger.warning(f"DEM tile not found: {tile_name}")
             return None
 
         try:
@@ -88,9 +91,33 @@ class RealDEMLoader:
 
         return float(dem[row, col])
 
-    def get_slope(self, lat: float, lon: float, window_size: int = 3) -> float:
+    def _slope_at_pixel(self, dem: np.ndarray, row: int, col: int) -> float:
+        """Calculate slope at a single pixel using Horn's method."""
+        if row < 1 or row >= 3600 or col < 1 or col >= 3600:
+            return np.nan
+
+        window = dem[row-1:row+2, col-1:col+2]
+        if np.any(np.isnan(window)):
+            return np.nan
+
+        cell_size = 30.0  # ~30m at these latitudes
+
+        a, b, c = window[0, 0], window[0, 1], window[0, 2]
+        d, e, f = window[1, 0], window[1, 1], window[1, 2]
+        g, h, i = window[2, 0], window[2, 1], window[2, 2]
+
+        dzdx = ((c + 2*f + i) - (a + 2*d + g)) / (8 * cell_size)
+        dzdy = ((g + 2*h + i) - (a + 2*b + c)) / (8 * cell_size)
+
+        return float(np.degrees(np.arctan(np.sqrt(dzdx**2 + dzdy**2))))
+
+    def get_slope(self, lat: float, lon: float, radius_pixels: int = 10) -> float:
         """
-        Calculate slope at a point using surrounding DEM values.
+        Calculate maximum slope within a radius around a point.
+
+        Highway segments sit on flat road surfaces, but adjacent cut-slopes
+        and embankments are what matter for risk. This samples a neighbourhood
+        (~300m at radius_pixels=10) and returns the maximum slope found.
 
         Uses Horn's method for slope calculation.
         Returns slope in degrees.
@@ -101,46 +128,30 @@ class RealDEMLoader:
         if dem is None:
             return np.nan
 
-        # Calculate pixel position
         lat_frac = lat - int(lat) if lat >= 0 else 1 + (lat - int(lat))
         lon_frac = lon - int(lon) if lon >= 0 else 1 + (lon - int(lon))
 
-        row = int((1 - lat_frac) * 3600)
-        col = int(lon_frac * 3600)
+        center_row = int((1 - lat_frac) * 3600)
+        center_col = int(lon_frac * 3600)
 
-        # Ensure we have enough margin for window
-        half = window_size // 2
-        if row < half or row >= 3601 - half or col < half or col >= 3601 - half:
-            return np.nan
+        # Clamp center to safe range
+        center_row = max(1, min(3599, center_row))
+        center_col = max(1, min(3599, center_col))
 
-        # Extract window
-        window = dem[row-half:row+half+1, col-half:col+half+1]
+        max_slope = 0.0
+        # Sample within radius (step by 2 pixels = ~60m for efficiency)
+        step = max(1, radius_pixels // 5)
+        for dr in range(-radius_pixels, radius_pixels + 1, step):
+            for dc in range(-radius_pixels, radius_pixels + 1, step):
+                if dr*dr + dc*dc > radius_pixels * radius_pixels:
+                    continue
+                r = center_row + dr
+                c = center_col + dc
+                s = self._slope_at_pixel(dem, r, c)
+                if not np.isnan(s) and s > max_slope:
+                    max_slope = s
 
-        if np.any(np.isnan(window)):
-            return np.nan
-
-        # Cell size in meters (approximately 30m at these latitudes)
-        cell_size = 30.0
-
-        # Horn's method for slope
-        # dz/dx = ((c + 2f + i) - (a + 2d + g)) / (8 * cell_size)
-        # dz/dy = ((g + 2h + i) - (a + 2b + c)) / (8 * cell_size)
-        # where window is:
-        # a b c
-        # d e f
-        # g h i
-
-        a, b, c = window[0, 0], window[0, 1], window[0, 2]
-        d, e, f = window[1, 0], window[1, 1], window[1, 2]
-        g, h, i = window[2, 0], window[2, 1], window[2, 2]
-
-        dzdx = ((c + 2*f + i) - (a + 2*d + g)) / (8 * cell_size)
-        dzdy = ((g + 2*h + i) - (a + 2*b + c)) / (8 * cell_size)
-
-        slope_rad = np.arctan(np.sqrt(dzdx**2 + dzdy**2))
-        slope_deg = np.degrees(slope_rad)
-
-        return float(slope_deg)
+        return max_slope if max_slope > 0 else np.nan
 
     def get_terrain_data(self, lat: float, lon: float, fallback_slope: float = None) -> Dict:
         """Get complete terrain data for a location.
