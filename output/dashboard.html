@@ -1223,6 +1223,15 @@
         L.control.layers(baseLayers, null, { position: 'topright' }).addTo(map);
         L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
 
+        // Re-fit open popup on zoom change
+        map.on('zoomend', function() {
+            map.eachLayer(function(layer) {
+                if (layer.getPopup && layer.getPopup() && layer.getPopup().isOpen()) {
+                    fitPopupToMap(layer.getPopup());
+                }
+            });
+        });
+
         let markers = [];
         let allSegments = [];
         let routeLayers = [];
@@ -1461,12 +1470,34 @@
 
         function fitPopupToMap(popup) {
             if (!popup._container) return;
+            const zoom = map.getZoom();
+            const mapW = map.getContainer().clientWidth;
             const mapH = map.getContainer().clientHeight;
-            const maxH = mapH - 100;
+
+            // Scale popup size by zoom level
+            let scale;
+            if (zoom >= 14) scale = 1.0;
+            else if (zoom >= 11) scale = 0.6 + (zoom - 11) * 0.133;
+            else if (zoom >= 8) scale = 0.35 + (zoom - 8) * 0.083;
+            else scale = 0.3;
+
+            const maxW = Math.min(350, Math.round(mapW * scale * 0.6));
+            const maxH = Math.round((mapH - 80) * scale);
+
+            popup.options.maxWidth = maxW;
             const contentNode = popup._contentNode;
             if (contentNode) {
                 contentNode.style.maxHeight = maxH + 'px';
                 contentNode.style.overflowY = 'auto';
+            }
+            const wrapper = popup._container?.querySelector('.leaflet-popup-content-wrapper');
+            if (wrapper) {
+                wrapper.style.maxWidth = maxW + 'px';
+            }
+            const content = popup._container?.querySelector('.leaflet-popup-content');
+            if (content) {
+                content.style.maxWidth = (maxW - 28) + 'px';
+                content.style.fontSize = zoom < 11 ? '11px' : '';
             }
             popup.update();
         }
