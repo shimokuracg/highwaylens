@@ -1191,15 +1191,20 @@
             });
         }
 
-        // Initialize map — constrained to Tomei/Shin-Tomei corridor
+        // Initialize map — constrained to Honshu (main island of Japan)
+        const honshuBounds = L.latLngBounds(
+            [33.0, 129.5],  // SW corner (Shimonoseki / western tip)
+            [41.5, 142.0]   // NE corner (Aomori / northern tip)
+        );
+        // Default view: fit to data markers (set after data loads)
         const corridorBounds = L.latLngBounds(
-            [34.55, 137.30],  // SW corner (Hamamatsu west + margin)
-            [35.55, 139.55]   // NE corner (Kanagawa east + margin)
+            [34.55, 137.30],
+            [35.55, 139.55]
         );
         const map = L.map('map', {
-            maxBounds: corridorBounds.pad(0.15),  // allow slight overscroll
-            maxBoundsViscosity: 0.8,               // elastic snap-back
-            minZoom: 9,
+            maxBounds: honshuBounds.pad(0.1),
+            maxBoundsViscosity: 0.8,
+            minZoom: 5,
             maxZoom: 18,
         }).fitBounds(corridorBounds);
 
