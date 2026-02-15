@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  highwaylens:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: highwaylens
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./config:/app/config
+    environment:
+      - APP_PASSWORD=${APP_PASSWORD:-}
+      - SESSION_SECRET=${SESSION_SECRET:-}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

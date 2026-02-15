@@ -1,0 +1,40 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data (71GB+ of satellite/DEM data)
+data/
+# But keep processed GeoJSON needed by the app
+!data/processed/
+data/processed/*
+!data/processed/*.geojson
+
+# OS
+.DS_Store
+Thumbs.db

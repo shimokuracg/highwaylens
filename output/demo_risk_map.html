@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_38ccc7cb4ef103f0e1dd7bd09a017489 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; bottom: 50px; left: 50px; z-index: 1000;
+                background-color: white; padding: 10px; border-radius: 5px;
+                border: 2px solid gray; font-family: Arial;">
+        <p style="margin: 0 0 5px 0;"><b>Risk Level</b></p>
+        <p style="margin: 2px 0;"><span style="color: #4CAF50;">●</span> Green (0-25)</p>
+        <p style="margin: 2px 0;"><span style="color: #FFC107;">●</span> Yellow (26-50)</p>
+        <p style="margin: 2px 0;"><span style="color: #FF9800;">●</span> Orange (51-75)</p>
+        <p style="margin: 2px 0;"><span style="color: #F44336;">●</span> Red (76-100)</p>
+    </div>
+    
+    
+            <div class="folium-map" id="map_38ccc7cb4ef103f0e1dd7bd09a017489" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_38ccc7cb4ef103f0e1dd7bd09a017489 = L.map(
+                "map_38ccc7cb4ef103f0e1dd7bd09a017489",
+                {
+                    center: [35.290916431684224, 139.07980190532774],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1530ebd32ca71ee7d4fa5ecc2e46acd3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1530ebd32ca71ee7d4fa5ecc2e46acd3.addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+            var tile_layer_9372b598611c89de7c79191bcb6fea0d = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9372b598611c89de7c79191bcb6fea0d.addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+            var circle_8aa5a2ef181061438392d9a99feb0ecc = L.circle(
+                [35.298334305759106, 139.06892250353386],
+                {"bubblingMouseEvents": true, "color": "#FFC107", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFC107", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 344, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_3f975d3c1d3a2f09498a94ec113f3267 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d72bb4213d29190f2bc5d4af4e37217 = $(`<div id="html_0d72bb4213d29190f2bc5d4af4e37217" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0007</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">48</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #FFC107; font-weight: bold;">                         YELLOW                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.2983, 139.0689                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【注意】監視強化を推奨します | 主要因: 地盤変動             </p>         </div>         </div>`)[0];
+                popup_3f975d3c1d3a2f09498a94ec113f3267.setContent(html_0d72bb4213d29190f2bc5d4af4e37217);
+            
+        
+
+        circle_8aa5a2ef181061438392d9a99feb0ecc.bindPopup(popup_3f975d3c1d3a2f09498a94ec113f3267)
+        ;
+
+        
+    
+    
+            var circle_71f95130e20d6ec795536ba6349437f3 = L.circle(
+                [35.31186001769839, 139.12139445790382],
+                {"bubblingMouseEvents": true, "color": "#FFC107", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFC107", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 329, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_9a20adb9b5a3be5aa0d5684461fb39e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c0dc2613250f0ae14ab5784784f7701 = $(`<div id="html_3c0dc2613250f0ae14ab5784784f7701" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0006</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">43</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #FFC107; font-weight: bold;">                         YELLOW                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.3119, 139.1214                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【注意】監視強化を推奨します | 主要因: 地盤変動             </p>         </div>         </div>`)[0];
+                popup_9a20adb9b5a3be5aa0d5684461fb39e0.setContent(html_3c0dc2613250f0ae14ab5784784f7701);
+            
+        
+
+        circle_71f95130e20d6ec795536ba6349437f3.bindPopup(popup_9a20adb9b5a3be5aa0d5684461fb39e0)
+        ;
+
+        
+    
+    
+            var circle_4c87f95c4a4273e35afcec783450b8c2 = L.circle(
+                [35.32611104790534, 139.17353705785956],
+                {"bubblingMouseEvents": true, "color": "#FFC107", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFC107", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 308, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_f52ce01aa06220a881478c447dc89367 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff63d472bc9e58474741d49dfdfc014b = $(`<div id="html_ff63d472bc9e58474741d49dfdfc014b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0005</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">36</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #FFC107; font-weight: bold;">                         YELLOW                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.3261, 139.1735                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【注意】監視強化を推奨します | 主要因: 地盤変動             </p>         </div>         </div>`)[0];
+                popup_f52ce01aa06220a881478c447dc89367.setContent(html_ff63d472bc9e58474741d49dfdfc014b);
+            
+        
+
+        circle_4c87f95c4a4273e35afcec783450b8c2.bindPopup(popup_f52ce01aa06220a881478c447dc89367)
+        ;
+
+        
+    
+    
+            var circle_d1584a1e164d4966058501aefdfb00f0 = L.circle(
+                [35.28265129806493, 139.01718920905483],
+                {"bubblingMouseEvents": true, "color": "#FFC107", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFC107", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 293, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_9585144d9fec171b00a5d9ed59c1dfb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_248076ead1e680750a6ed4c6b43afd19 = $(`<div id="html_248076ead1e680750a6ed4c6b43afd19" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0008</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">31</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #FFC107; font-weight: bold;">                         YELLOW                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.2827, 139.0172                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【注意】監視強化を推奨します | 主要因: 地盤変動             </p>         </div>         </div>`)[0];
+                popup_9585144d9fec171b00a5d9ed59c1dfb7.setContent(html_248076ead1e680750a6ed4c6b43afd19);
+            
+        
+
+        circle_d1584a1e164d4966058501aefdfb00f0.bindPopup(popup_9585144d9fec171b00a5d9ed59c1dfb7)
+        ;
+
+        
+    
+    
+            var circle_dc48ca095fe6ec09c2dc59c0ea326bda = L.circle(
+                [35.34711411236156, 139.22228360034043],
+                {"bubblingMouseEvents": true, "color": "#FFC107", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFC107", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 284, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_07269b562b127f677a4b8b98a24ccf2f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b632e33de6bf61dc7b25f56b606fe82 = $(`<div id="html_9b632e33de6bf61dc7b25f56b606fe82" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0004</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">28</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #FFC107; font-weight: bold;">                         YELLOW                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.3471, 139.2223                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【注意】監視強化を推奨します | 主要因: 地盤変動             </p>         </div>         </div>`)[0];
+                popup_07269b562b127f677a4b8b98a24ccf2f.setContent(html_9b632e33de6bf61dc7b25f56b606fe82);
+            
+        
+
+        circle_dc48ca095fe6ec09c2dc59c0ea326bda.bindPopup(popup_07269b562b127f677a4b8b98a24ccf2f)
+        ;
+
+        
+    
+    
+            var circle_c2e7365631f1d7b9342a6612a6c307bb = L.circle(
+                [35.26793566696894, 138.96503765247877],
+                {"bubblingMouseEvents": true, "color": "#FFC107", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFC107", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 278, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_71c198d02bb75fd2f88e1a57efec0675 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74f853e8f46516d39507e3aa23a6355d = $(`<div id="html_74f853e8f46516d39507e3aa23a6355d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0009</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">26</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #FFC107; font-weight: bold;">                         YELLOW                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.2679, 138.9650                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【注意】監視強化を推奨します | 主要因: 地盤変動             </p>         </div>         </div>`)[0];
+                popup_71c198d02bb75fd2f88e1a57efec0675.setContent(html_74f853e8f46516d39507e3aa23a6355d);
+            
+        
+
+        circle_c2e7365631f1d7b9342a6612a6c307bb.bindPopup(popup_71c198d02bb75fd2f88e1a57efec0675)
+        ;
+
+        
+    
+    
+            var circle_7af511047f7c3082bf232d3f6d739122 = L.circle(
+                [35.246897293326185, 138.9175183383456],
+                {"bubblingMouseEvents": true, "color": "#4CAF50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4CAF50", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 272, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_34d4f6a3309ed7cbdfc7c628b23e9636 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1fd89b6e01d830e01ac18ccf436ef9f = $(`<div id="html_e1fd89b6e01d830e01ac18ccf436ef9f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0010</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">24</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #4CAF50; font-weight: bold;">                         GREEN                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.2469, 138.9175                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【正常】通常監視を継続 | 主要因: 地盤変動             </p>         </div>         </div>`)[0];
+                popup_34d4f6a3309ed7cbdfc7c628b23e9636.setContent(html_e1fd89b6e01d830e01ac18ccf436ef9f);
+            
+        
+
+        circle_7af511047f7c3082bf232d3f6d739122.bindPopup(popup_34d4f6a3309ed7cbdfc7c628b23e9636)
+        ;
+
+        
+    
+    
+            var circle_85f68335cfdc8e66836ff5582e54b052 = L.circle(
+                [35.370121729275354, 139.2697265534704],
+                {"bubblingMouseEvents": true, "color": "#4CAF50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4CAF50", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 263, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_e9319fd9f3efb2278842b589ba512f1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c3f6bff1573e9183da9dc40c7ea7a4a = $(`<div id="html_3c3f6bff1573e9183da9dc40c7ea7a4a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0003</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">21</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #4CAF50; font-weight: bold;">                         GREEN                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.3701, 139.2697                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【正常】通常監視を継続 | 主要因: 地盤変動             </p>         </div>         </div>`)[0];
+                popup_e9319fd9f3efb2278842b589ba512f1e.setContent(html_3c3f6bff1573e9183da9dc40c7ea7a4a);
+            
+        
+
+        circle_85f68335cfdc8e66836ff5582e54b052.bindPopup(popup_e9319fd9f3efb2278842b589ba512f1e)
+        ;
+
+        
+    
+    
+            var circle_c8918fa48f8c09f88ba1035124f8bfd9 = L.circle(
+                [35.20944351095629, 138.8875278527019],
+                {"bubblingMouseEvents": true, "color": "#4CAF50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4CAF50", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 254, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_7b2e979d5b9d4390f9399a77ce5caf67 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1f49d01abfbf6f426089cf818329b330 = $(`<div id="html_1f49d01abfbf6f426089cf818329b330" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0011</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">18</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #4CAF50; font-weight: bold;">                         GREEN                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.2094, 138.8875                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【正常】通常監視を継続 | 主要因: 地質             </p>         </div>         </div>`)[0];
+                popup_7b2e979d5b9d4390f9399a77ce5caf67.setContent(html_1f49d01abfbf6f426089cf818329b330);
+            
+        
+
+        circle_c8918fa48f8c09f88ba1035124f8bfd9.bindPopup(popup_7b2e979d5b9d4390f9399a77ce5caf67)
+        ;
+
+        
+    
+    
+            var circle_fe9547a63702f136d5c977d04eb83e2a = L.circle(
+                [35.397028278844495, 139.31377625913868],
+                {"bubblingMouseEvents": true, "color": "#4CAF50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4CAF50", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 242, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_b27532964e6a5a06ffa1f0fedbfc1c63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10948f871ee57248fc560e90f91081cc = $(`<div id="html_10948f871ee57248fc560e90f91081cc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0002</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">14</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #4CAF50; font-weight: bold;">                         GREEN                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.3970, 139.3138                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【正常】通常監視を継続 | 主要因: 地質             </p>         </div>         </div>`)[0];
+                popup_b27532964e6a5a06ffa1f0fedbfc1c63.setContent(html_10948f871ee57248fc560e90f91081cc);
+            
+        
+
+        circle_fe9547a63702f136d5c977d04eb83e2a.bindPopup(popup_b27532964e6a5a06ffa1f0fedbfc1c63)
+        ;
+
+        
+    
+    
+            var circle_31daa16159bb84336f1979f3d0ff3a78 = L.circle(
+                [35.16665708642296, 138.87039990338855],
+                {"bubblingMouseEvents": true, "color": "#4CAF50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4CAF50", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 239, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_bbfbc5cb8b727217a82776307f71bddd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_226b062c137ffca8b8ce76feb65462e6 = $(`<div id="html_226b062c137ffca8b8ce76feb65462e6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0012</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">13</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #4CAF50; font-weight: bold;">                         GREEN                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.1667, 138.8704                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【正常】通常監視を継続 | 主要因: 地質             </p>         </div>         </div>`)[0];
+                popup_bbfbc5cb8b727217a82776307f71bddd.setContent(html_226b062c137ffca8b8ce76feb65462e6);
+            
+        
+
+        circle_31daa16159bb84336f1979f3d0ff3a78.bindPopup(popup_bbfbc5cb8b727217a82776307f71bddd)
+        ;
+
+        
+    
+    
+            var circle_00d48d34c9b78b4c61469ff408928f4b = L.circle(
+                [35.12861028153643, 138.85773676051215],
+                {"bubblingMouseEvents": true, "color": "#4CAF50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4CAF50", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 239, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_0ce1fc09fe20c54cfe9df3ebc099ae85 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4aa0c03f9170cc107c63f624c5c5544b = $(`<div id="html_4aa0c03f9170cc107c63f624c5c5544b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0013</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">13</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #4CAF50; font-weight: bold;">                         GREEN                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.1286, 138.8577                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【正常】通常監視を継続 | 主要因: 地質             </p>         </div>         </div>`)[0];
+                popup_0ce1fc09fe20c54cfe9df3ebc099ae85.setContent(html_4aa0c03f9170cc107c63f624c5c5544b);
+            
+        
+
+        circle_00d48d34c9b78b4c61469ff408928f4b.bindPopup(popup_0ce1fc09fe20c54cfe9df3ebc099ae85)
+        ;
+
+        
+    
+    
+            var circle_6df20b90e7b60411383b39bdcbbd9873 = L.circle(
+                [35.42914898277482, 139.35237462053217],
+                {"bubblingMouseEvents": true, "color": "#4CAF50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4CAF50", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 236, "stroke": true, "weight": 2}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+        
+    
+        var popup_3f78da987ac8a179c80822cba85acd23 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00d6e64a39597a4be57f3f71dbf69642 = $(`<div id="html_00d6e64a39597a4be57f3f71dbf69642" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0;">CHUO_0001</h4>             <table style="width: 100%;">                 <tr>                     <td><b>Risk Score:</b></td>                     <td style="text-align: right;">12</td>                 </tr>                 <tr>                     <td><b>Level:</b></td>                     <td style="text-align: right; color: #4CAF50; font-weight: bold;">                         GREEN                     </td>                 </tr>                 <tr>                     <td><b>Location:</b></td>                     <td style="text-align: right;">                         35.4291, 139.3524                     </td>                 </tr>             </table>             <p style="margin-top: 10px; font-size: 12px;">                 【正常】通常監視を継続 | 主要因: 地質             </p>         </div>         </div>`)[0];
+                popup_3f78da987ac8a179c80822cba85acd23.setContent(html_00d6e64a39597a4be57f3f71dbf69642);
+            
+        
+
+        circle_6df20b90e7b60411383b39bdcbbd9873.bindPopup(popup_3f78da987ac8a179c80822cba85acd23)
+        ;
+
+        
+    
+    
+            var layer_control_97bbc9826983981b4991a1661e9e5fce_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_1530ebd32ca71ee7d4fa5ecc2e46acd3,
+                    "Satellite" : tile_layer_9372b598611c89de7c79191bcb6fea0d,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_97bbc9826983981b4991a1661e9e5fce = L.control.layers(
+                layer_control_97bbc9826983981b4991a1661e9e5fce_layers.base_layers,
+                layer_control_97bbc9826983981b4991a1661e9e5fce_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_38ccc7cb4ef103f0e1dd7bd09a017489);
+
+        
+</script>
+</html>

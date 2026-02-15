@@ -1,0 +1,8673 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3779355022633,
+          35.04153601970493
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0001",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 120.767,
+        "kp_to": 120.79,
+        "kp_center": 120.78,
+        "length_m": 23.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.37713171218414,
+          35.04131549175775
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0002",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 120.837,
+        "kp_to": 120.865,
+        "kp_center": 120.85,
+        "length_m": 28.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.37681573953233,
+          35.04122880146127
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0003",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 120.855,
+        "kp_to": 120.904,
+        "kp_center": 120.88,
+        "length_m": 49.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.37669932855533,
+          35.04119686293099
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0004",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 120.832,
+        "kp_to": 120.948,
+        "kp_center": 120.89,
+        "length_m": 116.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3745439284439,
+          35.04049685762602
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0005",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 121.062,
+        "kp_to": 121.115,
+        "kp_center": 121.09,
+        "length_m": 53.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3743939737342,
+          35.040443106438694
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0006",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 121.035,
+        "kp_to": 121.17,
+        "kp_center": 121.1,
+        "length_m": 135.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.37407799773868,
+          35.04032984500825
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0007",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 121.11,
+        "kp_to": 121.154,
+        "kp_center": 121.13,
+        "length_m": 44.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.37315879030766,
+          35.039974199177756
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0008",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 121.182,
+        "kp_to": 121.256,
+        "kp_center": 121.22,
+        "length_m": 74.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.37299810292316,
+          35.03990557542855
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0009",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 121.172,
+        "kp_to": 121.297,
+        "kp_center": 121.23,
+        "length_m": 125.0,
+        "tiers": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.37221021639263,
+          35.03956909769048
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0010",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 121.297,
+        "kp_to": 121.324,
+        "kp_center": 121.31,
+        "length_m": 27.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.37106467084496,
+          35.03907987676869
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0011",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 121.369,
+        "kp_to": 121.473,
+        "kp_center": 121.42,
+        "length_m": 104.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.37047892064982,
+          35.038791510019124
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0012",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 121.463,
+        "kp_to": 121.496,
+        "kp_center": 121.48,
+        "length_m": 33.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3690434029704,
+          35.03804402518777
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0013",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 121.554,
+        "kp_to": 121.696,
+        "kp_center": 121.62,
+        "length_m": 142.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.36822250097157,
+          35.03757058578769
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0014",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 121.546,
+        "kp_to": 121.876,
+        "kp_center": 121.71,
+        "length_m": 330.0,
+        "tiers": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.36730406863757,
+          35.03697045096365
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0015",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 121.722,
+        "kp_to": 121.901,
+        "kp_center": 121.81,
+        "length_m": 179.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.36391853746673,
+          35.03445534879808
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0016",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 122.182,
+        "kp_to": 122.224,
+        "kp_center": 122.2,
+        "length_m": 42.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.36291738702872,
+          35.03349365256452
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0017",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 122.256,
+        "kp_to": 122.414,
+        "kp_center": 122.34,
+        "length_m": 158.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.36262538481762,
+          35.033213157829735
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0018",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 122.291,
+        "kp_to": 122.456,
+        "kp_center": 122.37,
+        "length_m": 165.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.36086753016366,
+          35.0314471636748
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0019",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 122.458,
+        "kp_to": 122.765,
+        "kp_center": 122.61,
+        "length_m": 307.0,
+        "tiers": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.36078321360097,
+          35.031361410564266
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0020",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 122.568,
+        "kp_to": 122.678,
+        "kp_center": 122.62,
+        "length_m": 110.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.359529462973,
+          35.03008629909459
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0021",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 122.692,
+        "kp_to": 122.896,
+        "kp_center": 122.79,
+        "length_m": 204.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.35922794043486,
+          35.02977506123272
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0022",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 122.765,
+        "kp_to": 122.906,
+        "kp_center": 122.84,
+        "length_m": 141.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.35805669536603,
+          35.02854415928887
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0023",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 122.879,
+        "kp_to": 123.118,
+        "kp_center": 123.0,
+        "length_m": 239.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3534840560968,
+          35.024710734196795
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0024",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 123.481,
+        "kp_to": 123.638,
+        "kp_center": 123.56,
+        "length_m": 157.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3492950521924,
+          35.02224319768839
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0025",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 123.841,
+        "kp_to": 124.162,
+        "kp_center": 124.0,
+        "length_m": 321.0,
+        "tiers": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.34924422531267,
+          35.02221956242361
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0026",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 123.939,
+        "kp_to": 124.074,
+        "kp_center": 124.01,
+        "length_m": 135.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.34855297974866,
+          35.02189812282253
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0027",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 123.944,
+        "kp_to": 124.205,
+        "kp_center": 124.07,
+        "length_m": 261.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.34752627677858,
+          35.02142069047386
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0028",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 124.146,
+        "kp_to": 124.205,
+        "kp_center": 124.18,
+        "length_m": 59.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.33427029080855,
+          35.01600490482661
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0029",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 125.43,
+        "kp_to": 125.457,
+        "kp_center": 125.44,
+        "length_m": 27.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.33385468581193,
+          35.01585147526209
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0030",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 125.464,
+        "kp_to": 125.501,
+        "kp_center": 125.48,
+        "length_m": 37.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3227096530047,
+          35.01215300469446
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0031",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 126.498,
+        "kp_to": 126.525,
+        "kp_center": 126.51,
+        "length_m": 27.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.32276879627,
+          35.01217364212423
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0032",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 126.488,
+        "kp_to": 126.524,
+        "kp_center": 126.51,
+        "length_m": 36.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.32010265122454,
+          35.01116615059851
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0033",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 126.721,
+        "kp_to": 126.794,
+        "kp_center": 126.76,
+        "length_m": 73.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3204441509611,
+          35.011323049257086
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0034",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 126.714,
+        "kp_to": 126.734,
+        "kp_center": 126.72,
+        "length_m": 20.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.31665748444215,
+          35.00953501046104
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0035",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.074,
+        "kp_to": 127.122,
+        "kp_center": 127.1,
+        "length_m": 48.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.31594016708937,
+          35.00910616946304
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0036",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.09,
+        "kp_to": 127.258,
+        "kp_center": 127.17,
+        "length_m": 168.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3159119622812,
+          35.00908910653684
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0037",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.089,
+        "kp_to": 127.265,
+        "kp_center": 127.18,
+        "length_m": 176.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.31464274591383,
+          35.008321274858154
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0038",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.256,
+        "kp_to": 127.368,
+        "kp_center": 127.31,
+        "length_m": 112.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3145393282839,
+          35.008258710795445
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0039",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.293,
+        "kp_to": 127.353,
+        "kp_center": 127.32,
+        "length_m": 60.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.31290724679613,
+          35.00720219393817
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0040",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 127.491,
+        "kp_to": 127.511,
+        "kp_center": 127.5,
+        "length_m": 20.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.31222227254827,
+          35.00675415486578
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0041",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 127.546,
+        "kp_to": 127.606,
+        "kp_center": 127.58,
+        "length_m": 60.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3114231359258,
+          35.006231442614656
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0042",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.591,
+        "kp_to": 127.736,
+        "kp_center": 127.66,
+        "length_m": 145.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3114551013907,
+          35.0062523511047
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0043",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 127.611,
+        "kp_to": 127.709,
+        "kp_center": 127.66,
+        "length_m": 98.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.31081906056502,
+          35.005766692152974
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0044",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.703,
+        "kp_to": 127.766,
+        "kp_center": 127.73,
+        "length_m": 63.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.31099665668185,
+          35.00591230299951
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0045",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.704,
+        "kp_to": 127.722,
+        "kp_center": 127.71,
+        "length_m": 18.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.31059603288344,
+          35.005583832020115
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0046",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.733,
+        "kp_to": 127.79,
+        "kp_center": 127.76,
+        "length_m": 57.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3093445997812,
+          35.004557783496836
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0047",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.898,
+        "kp_to": 127.928,
+        "kp_center": 127.91,
+        "length_m": 30.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.30947263419102,
+          35.00466275875829
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0048",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 127.872,
+        "kp_to": 127.923,
+        "kp_center": 127.9,
+        "length_m": 51.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.30888202384904,
+          35.004178518036085
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0049",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 127.934,
+        "kp_to": 128.004,
+        "kp_center": 127.97,
+        "length_m": 70.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3090389692546,
+          35.00430719738884
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0050",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 127.909,
+        "kp_to": 127.991,
+        "kp_center": 127.95,
+        "length_m": 82.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3028580863584,
+          34.99762559685894
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0051",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 128.698,
+        "kp_to": 128.959,
+        "kp_center": 128.83,
+        "length_m": 261.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.30236865798244,
+          34.996890120423096
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0052",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 128.766,
+        "kp_to": 129.066,
+        "kp_center": 128.92,
+        "length_m": 300.0,
+        "tiers": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.30225958537292,
+          34.99672621424596
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0053",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 128.758,
+        "kp_to": 129.113,
+        "kp_center": 128.94,
+        "length_m": 355.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.301862449205,
+          34.996129427652306
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0054",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 128.988,
+        "kp_to": 129.025,
+        "kp_center": 129.01,
+        "length_m": 37.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2981529049348,
+          34.98962411085854
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0055",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 129.674,
+        "kp_to": 129.84,
+        "kp_center": 129.76,
+        "length_m": 166.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29787130193904,
+          34.98904104824554
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0056",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 129.78,
+        "kp_to": 129.865,
+        "kp_center": 129.82,
+        "length_m": 85.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29763914069062,
+          34.98856035540428
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0057",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 129.804,
+        "kp_to": 129.949,
+        "kp_center": 129.88,
+        "length_m": 145.0,
+        "tiers": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29734034056534,
+          34.987941685914144
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0058",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 129.929,
+        "kp_to": 129.963,
+        "kp_center": 129.95,
+        "length_m": 34.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29720061388807,
+          34.98765238003746
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0059",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 129.968,
+        "kp_to": 129.989,
+        "kp_center": 129.98,
+        "length_m": 21.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2966825503615,
+          34.986579722863915
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0060",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 130.072,
+        "kp_to": 130.126,
+        "kp_center": 130.1,
+        "length_m": 54.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29586389023967,
+          34.984655385107246
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0061",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 130.216,
+        "kp_to": 130.408,
+        "kp_center": 130.31,
+        "length_m": 192.0,
+        "tiers": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29588679442745,
+          34.984714714254814
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0062",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 130.234,
+        "kp_to": 130.377,
+        "kp_center": 130.31,
+        "length_m": 143.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29530909819306,
+          34.983098572739834
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0063",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 130.377,
+        "kp_to": 130.586,
+        "kp_center": 130.48,
+        "length_m": 209.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29532417698346,
+          34.98314975567625
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0064",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 130.441,
+        "kp_to": 130.511,
+        "kp_center": 130.48,
+        "length_m": 70.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29495543201833,
+          34.98189810023124
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0065",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 130.511,
+        "kp_to": 130.71,
+        "kp_center": 130.61,
+        "length_m": 199.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29496776921047,
+          34.981939977179216
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0066",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 130.586,
+        "kp_to": 130.626,
+        "kp_center": 130.61,
+        "length_m": 40.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29450066445588,
+          34.980089610950444
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0067",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 130.681,
+        "kp_to": 130.926,
+        "kp_center": 130.8,
+        "length_m": 245.0,
+        "tiers": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29448330892066,
+          34.98000463330656
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0068",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 130.71,
+        "kp_to": 130.915,
+        "kp_center": 130.81,
+        "length_m": 205.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29402140536536,
+          34.977738443524494
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0069",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 130.996,
+        "kp_to": 131.109,
+        "kp_center": 131.05,
+        "length_m": 113.0,
+        "tiers": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29375370010106,
+          34.97629993748185
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0070",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 131.145,
+        "kp_to": 131.264,
+        "kp_center": 131.2,
+        "length_m": 119.0,
+        "tiers": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2924215774788,
+          34.97005768001081
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0071",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 131.589,
+        "kp_to": 132.144,
+        "kp_center": 131.87,
+        "length_m": 555.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2923968073624,
+          34.96997394589217
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0072",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 131.609,
+        "kp_to": 132.142,
+        "kp_center": 131.88,
+        "length_m": 533.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29214773008104,
+          34.9691319528103
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0073",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 131.866,
+        "kp_to": 132.066,
+        "kp_center": 131.97,
+        "length_m": 140.0,
+        "tiers": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29182709468571,
+          34.96804806116347
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0074",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 132.039,
+        "kp_to": 132.126,
+        "kp_center": 132.08,
+        "length_m": 87.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29128282095962,
+          34.96652856411294
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0075",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 132.223,
+        "kp_to": 132.273,
+        "kp_center": 132.25,
+        "length_m": 50.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.291252924488,
+          34.96645096729434
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0076",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 132.239,
+        "kp_to": 132.274,
+        "kp_center": 132.26,
+        "length_m": 35.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29124589002407,
+          34.966432709219376
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0077",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 132.231,
+        "kp_to": 132.286,
+        "kp_center": 132.26,
+        "length_m": 55.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29109816628184,
+          34.96604928964512
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0078",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 132.133,
+        "kp_to": 132.468,
+        "kp_center": 132.3,
+        "length_m": 335.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29081502910927,
+          34.96531440212781
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0079",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 132.36,
+        "kp_to": 132.402,
+        "kp_center": 132.38,
+        "length_m": 42.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2905157029642,
+          34.96463470809546
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0080",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 132.378,
+        "kp_to": 132.535,
+        "kp_center": 132.46,
+        "length_m": 157.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.29075699478196,
+          34.96516377300935
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0081",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 132.387,
+        "kp_to": 132.408,
+        "kp_center": 132.4,
+        "length_m": 21.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2799472034439,
+          34.94275252215422
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0082",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 134.869,
+        "kp_to": 134.961,
+        "kp_center": 134.92,
+        "length_m": 92.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27963190935407,
+          34.9420112824096
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0083",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 134.903,
+        "kp_to": 135.091,
+        "kp_center": 135.0,
+        "length_m": 188.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27962806430418,
+          34.94200224290052
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0084",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 134.915,
+        "kp_to": 135.081,
+        "kp_center": 135.0,
+        "length_m": 166.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27962998682912,
+          34.94200676265506
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0085",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 134.956,
+        "kp_to": 135.039,
+        "kp_center": 135.0,
+        "length_m": 83.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27856032688337,
+          34.939332495676894
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0086",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 135.12,
+        "kp_to": 135.463,
+        "kp_center": 135.29,
+        "length_m": 343.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27834137555476,
+          34.93877176666463
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0087",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 135.307,
+        "kp_to": 135.399,
+        "kp_center": 135.35,
+        "length_m": 92.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27745772159693,
+          34.93652086821456
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0088",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 135.484,
+        "kp_to": 135.716,
+        "kp_center": 135.6,
+        "length_m": 232.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27695797579324,
+          34.93529020312637
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0089",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 135.516,
+        "kp_to": 135.955,
+        "kp_center": 135.74,
+        "length_m": 439.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27736448054335,
+          34.93628399105214
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0090",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 135.516,
+        "kp_to": 135.736,
+        "kp_center": 135.63,
+        "length_m": 220.0,
+        "tiers": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27647758719877,
+          34.93417542828073
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0091",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 135.736,
+        "kp_to": 135.982,
+        "kp_center": 135.86,
+        "length_m": 246.0,
+        "tiers": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2774631008885,
+          34.9365345342047
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0092",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 135.533,
+        "kp_to": 135.664,
+        "kp_center": 135.6,
+        "length_m": 131.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27716186056148,
+          34.935769238756905
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0093",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 135.674,
+        "kp_to": 135.691,
+        "kp_center": 135.68,
+        "length_m": 17.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27694825132778,
+          34.93526763683395
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0094",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 135.727,
+        "kp_to": 135.749,
+        "kp_center": 135.74,
+        "length_m": 22.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27608860857976,
+          34.93327277658386
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0095",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 135.709,
+        "kp_to": 136.209,
+        "kp_center": 135.96,
+        "length_m": 500.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27643090976449,
+          34.93406711007711
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0096",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 135.753,
+        "kp_to": 135.989,
+        "kp_center": 135.87,
+        "length_m": 236.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27522761782325,
+          34.93129881047279
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0097",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 136.078,
+        "kp_to": 136.278,
+        "kp_center": 136.18,
+        "length_m": 200.0,
+        "tiers": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2753592736691,
+          34.931580304652236
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0098",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 136.132,
+        "kp_to": 136.161,
+        "kp_center": 136.15,
+        "length_m": 29.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27515949295244,
+          34.93116133766346
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0099",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 136.18,
+        "kp_to": 136.207,
+        "kp_center": 136.19,
+        "length_m": 27.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27488919104567,
+          34.93061588103291
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0100",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 136.202,
+        "kp_to": 136.308,
+        "kp_center": 136.25,
+        "length_m": 106.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27502763836378,
+          34.930895261258314
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0101",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 136.207,
+        "kp_to": 136.24,
+        "kp_center": 136.22,
+        "length_m": 33.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27462328429183,
+          34.930079293615854
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0102",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 136.298,
+        "kp_to": 136.333,
+        "kp_center": 136.32,
+        "length_m": 35.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27398939001878,
+          34.92889750526701
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0103",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 136.399,
+        "kp_to": 136.502,
+        "kp_center": 136.45,
+        "length_m": 103.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.27392078877057,
+          34.92879188112297
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0104",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 136.42,
+        "kp_to": 136.506,
+        "kp_center": 136.46,
+        "length_m": 86.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2736930326266,
+          34.92844120896475
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0105",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 136.475,
+        "kp_to": 136.534,
+        "kp_center": 136.5,
+        "length_m": 59.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.26868878624038,
+          34.92196456250937
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0106",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 137.179,
+        "kp_to": 137.435,
+        "kp_center": 137.31,
+        "length_m": 256.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.26878926101546,
+          34.92207027902066
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0107",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 137.195,
+        "kp_to": 137.391,
+        "kp_center": 137.29,
+        "length_m": 196.0,
+        "tiers": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.26860266500458,
+          34.92187394835684
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0108",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 137.222,
+        "kp_to": 137.416,
+        "kp_center": 137.32,
+        "length_m": 194.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.26778092487973,
+          34.92100933831811
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0109",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "下り線",
+        "kp_from": 137.326,
+        "kp_to": 137.541,
+        "kp_center": 137.43,
+        "length_m": 215.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.26792446027272,
+          34.92116036190566
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0110",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上り線",
+        "kp_from": 137.391,
+        "kp_to": 137.436,
+        "kp_center": 137.41,
+        "length_m": 45.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.26682953605754,
+          34.92014660433182
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0111",
+        "road": "新東名高速道路",
+        "ic_from": "新静岡",
+        "ic_to": "藤枝岡部",
+        "direction": "上下線共有",
+        "kp_from": 137.528,
+        "kp_to": 137.582,
+        "kp_center": 137.56,
+        "length_m": 54.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.25459422004727,
+          34.910625485458645
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0112",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 138.826,
+        "kp_to": 139.305,
+        "kp_center": 139.07,
+        "length_m": 479.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.25517812923644,
+          34.91115405315795
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0113",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 138.84,
+        "kp_to": 139.13,
+        "kp_center": 138.99,
+        "length_m": 290.0,
+        "tiers": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.25398129673687,
+          34.91007065352584
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0114",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 139.123,
+        "kp_to": 139.177,
+        "kp_center": 139.15,
+        "length_m": 54.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.25364763434305,
+          34.90976861484052
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0115",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 139.176,
+        "kp_to": 139.216,
+        "kp_center": 139.2,
+        "length_m": 40.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.25248804733874,
+          34.90860710402531
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0116",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 139.215,
+        "kp_to": 139.516,
+        "kp_center": 139.37,
+        "length_m": 301.0,
+        "tiers": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.25262226119185,
+          34.90874596953083
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0117",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 139.21,
+        "kp_to": 139.481,
+        "kp_center": 139.35,
+        "length_m": 271.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.25291082097607,
+          34.90904453036768
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0118",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 139.261,
+        "kp_to": 139.344,
+        "kp_center": 139.3,
+        "length_m": 83.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.24254136748797,
+          34.899217013527334
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0119",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 140.651,
+        "kp_to": 140.891,
+        "kp_center": 140.77,
+        "length_m": 240.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2327643473369,
+          34.89314818254534
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0120",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 141.751,
+        "kp_to": 142.066,
+        "kp_center": 141.91,
+        "length_m": 315.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2322799662586,
+          34.89290630694837
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0121",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 141.801,
+        "kp_to": 142.121,
+        "kp_center": 141.96,
+        "length_m": 320.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.23256136859933,
+          34.893046825152325
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0122",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 141.823,
+        "kp_to": 142.038,
+        "kp_center": 141.93,
+        "length_m": 215.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2292054262875,
+          34.89155880802863
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0123",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 142.039,
+        "kp_to": 142.529,
+        "kp_center": 142.28,
+        "length_m": 490.0,
+        "tiers": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2289732159457,
+          34.891464284669965
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0124",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 142.138,
+        "kp_to": 142.478,
+        "kp_center": 142.31,
+        "length_m": 340.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2292489657266,
+          34.89157653115838
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0125",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 142.176,
+        "kp_to": 142.383,
+        "kp_center": 142.28,
+        "length_m": 207.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.228944189653,
+          34.89145246925013
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0126",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上下線共有",
+        "kp_from": 142.16,
+        "kp_to": 142.462,
+        "kp_center": 142.31,
+        "length_m": 302.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.22788956768397,
+          34.89102317566287
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0127",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 142.34,
+        "kp_to": 142.5,
+        "kp_center": 142.42,
+        "length_m": 160.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.22588675348592,
+          34.89020791169441
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0128",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 142.576,
+        "kp_to": 142.678,
+        "kp_center": 142.63,
+        "length_m": 102.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2246787356201,
+          34.889733849205385
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0129",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 142.697,
+        "kp_to": 142.805,
+        "kp_center": 142.75,
+        "length_m": 108.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.22380801787548,
+          34.88941029791654
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0130",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上下線共有",
+        "kp_from": 142.822,
+        "kp_to": 142.857,
+        "kp_center": 142.84,
+        "length_m": 35.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.22315866904896,
+          34.88916900542994
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0131",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 142.845,
+        "kp_to": 142.966,
+        "kp_center": 142.91,
+        "length_m": 121.0,
+        "tiers": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.22197311550966,
+          34.888728463844565
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0132",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 142.991,
+        "kp_to": 143.061,
+        "kp_center": 143.03,
+        "length_m": 70.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.22152053905484,
+          34.8885602902933
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0133",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 143.053,
+        "kp_to": 143.091,
+        "kp_center": 143.07,
+        "length_m": 38.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.221422152869,
+          34.88852373082564
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0134",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 143.057,
+        "kp_to": 143.107,
+        "kp_center": 143.08,
+        "length_m": 50.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.21697294558177,
+          34.88711750152122
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0135",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 143.513,
+        "kp_to": 143.534,
+        "kp_center": 143.52,
+        "length_m": 21.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.21737670096036,
+          34.8872436127691
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0136",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 143.468,
+        "kp_to": 143.499,
+        "kp_center": 143.48,
+        "length_m": 31.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.21187185244946,
+          34.885763660482056
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0137",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 143.988,
+        "kp_to": 144.052,
+        "kp_center": 144.02,
+        "length_m": 64.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.21165549203576,
+          34.88570782657348
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0138",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 144.026,
+        "kp_to": 144.056,
+        "kp_center": 144.04,
+        "length_m": 30.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.20945507676845,
+          34.88514223688676
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0139",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上下線共有",
+        "kp_from": 144.147,
+        "kp_to": 144.362,
+        "kp_center": 144.25,
+        "length_m": 215.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.20609087537153,
+          34.88435213015868
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0140",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 144.553,
+        "kp_to": 144.604,
+        "kp_center": 144.58,
+        "length_m": 51.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.20607010869622,
+          34.88434725295666
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0141",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 144.565,
+        "kp_to": 144.596,
+        "kp_center": 144.58,
+        "length_m": 31.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2054329777543,
+          34.88419322101784
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0142",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 144.623,
+        "kp_to": 144.661,
+        "kp_center": 144.64,
+        "length_m": 38.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2053967206688,
+          34.88418444823236
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0143",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 144.618,
+        "kp_to": 144.673,
+        "kp_center": 144.65,
+        "length_m": 55.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.20528276982859,
+          34.88415687662087
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0144",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 144.626,
+        "kp_to": 144.687,
+        "kp_center": 144.66,
+        "length_m": 61.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.20534492483233,
+          34.884171915681684
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0145",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 144.64,
+        "kp_to": 144.661,
+        "kp_center": 144.65,
+        "length_m": 21.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.20491501938972,
+          34.884067895511045
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0146",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 144.67,
+        "kp_to": 144.714,
+        "kp_center": 144.69,
+        "length_m": 44.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.1787436503149,
+          34.87597295856229
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0147",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 147.239,
+        "kp_to": 147.332,
+        "kp_center": 147.29,
+        "length_m": 93.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.17834496414986,
+          34.8758254096062
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0148",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 147.306,
+        "kp_to": 147.346,
+        "kp_center": 147.33,
+        "length_m": 40.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.17581533200135,
+          34.874867343256426
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0149",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 147.546,
+        "kp_to": 147.622,
+        "kp_center": 147.58,
+        "length_m": 76.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.1755117618427,
+          34.87475155171816
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0150",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 147.597,
+        "kp_to": 147.633,
+        "kp_center": 147.62,
+        "length_m": 36.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.17185666582833,
+          34.8733522491857
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0151",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上下線共有",
+        "kp_from": 147.959,
+        "kp_to": 148.018,
+        "kp_center": 147.99,
+        "length_m": 59.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.17141635547517,
+          34.873183550396554
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0152",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上下線共有",
+        "kp_from": 148.008,
+        "kp_to": 148.059,
+        "kp_center": 148.03,
+        "length_m": 51.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.17136253976537,
+          34.873162931655656
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0153",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 148.002,
+        "kp_to": 148.076,
+        "kp_center": 148.04,
+        "length_m": 74.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.17069329869858,
+          34.87290440580378
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0154",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 148.072,
+        "kp_to": 148.143,
+        "kp_center": 148.11,
+        "length_m": 71.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.1685394121922,
+          34.872040788507505
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0155",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 148.31,
+        "kp_to": 148.349,
+        "kp_center": 148.33,
+        "length_m": 39.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.16829685740544,
+          34.871943534307476
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0156",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 148.339,
+        "kp_to": 148.37,
+        "kp_center": 148.35,
+        "length_m": 31.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.1648331285936,
+          34.87044020482061
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0157",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 148.707,
+        "kp_to": 148.728,
+        "kp_center": 148.72,
+        "length_m": 21.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.16452195725222,
+          34.8702977168076
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0158",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上下線共有",
+        "kp_from": 148.705,
+        "kp_to": 148.796,
+        "kp_center": 148.75,
+        "length_m": 91.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.16387604098296,
+          34.87000194623513
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0159",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 148.811,
+        "kp_to": 148.827,
+        "kp_center": 148.82,
+        "length_m": 16.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.16329208401652,
+          34.869724809461886
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0160",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 148.833,
+        "kp_to": 148.93,
+        "kp_center": 148.88,
+        "length_m": 97.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.16311617261726,
+          34.86962985294681
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0161",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 148.869,
+        "kp_to": 148.933,
+        "kp_center": 148.9,
+        "length_m": 64.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.15180169978638,
+          34.86288085116975
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0162",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 150.162,
+        "kp_to": 150.232,
+        "kp_center": 150.2,
+        "length_m": 70.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.15150573961284,
+          34.862695224281495
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0163",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 150.205,
+        "kp_to": 150.258,
+        "kp_center": 150.23,
+        "length_m": 53.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.15154434311376,
+          34.86271943648431
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0164",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 150.208,
+        "kp_to": 150.246,
+        "kp_center": 150.23,
+        "length_m": 38.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.15102830868287,
+          34.86240548924268
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0165",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 150.277,
+        "kp_to": 150.296,
+        "kp_center": 150.29,
+        "length_m": 19.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.1508753392815,
+          34.86231447020592
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0166",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 150.292,
+        "kp_to": 150.316,
+        "kp_center": 150.3,
+        "length_m": 24.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.15071799932582,
+          34.86222085062525
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0167",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 150.311,
+        "kp_to": 150.333,
+        "kp_center": 150.32,
+        "length_m": 22.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.14775798652337,
+          34.86046947397058
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0168",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 150.65,
+        "kp_to": 150.67,
+        "kp_center": 150.66,
+        "length_m": 20.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.14769464126232,
+          34.86043564336566
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0169",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 150.654,
+        "kp_to": 150.68,
+        "kp_center": 150.67,
+        "length_m": 26.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.14720597782002,
+          34.8601746644134
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0170",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 150.664,
+        "kp_to": 150.778,
+        "kp_center": 150.72,
+        "length_m": 114.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.14623770025838,
+          34.85965753945243
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0171",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 150.778,
+        "kp_to": 150.878,
+        "kp_center": 150.83,
+        "length_m": 100.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.143158781754,
+          34.85817028540337
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0172",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 151.004,
+        "kp_to": 151.314,
+        "kp_center": 151.16,
+        "length_m": 310.0,
+        "tiers": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.14316346982346,
+          34.85817248205584
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0173",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 151.071,
+        "kp_to": 151.246,
+        "kp_center": 151.16,
+        "length_m": 175.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.1424752567508,
+          34.8578857992316
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0174",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 151.119,
+        "kp_to": 151.341,
+        "kp_center": 151.23,
+        "length_m": 222.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.14145981825618,
+          34.85747215062598
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0175",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 151.246,
+        "kp_to": 151.424,
+        "kp_center": 151.34,
+        "length_m": 178.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.13036952993966,
+          34.85367404990005
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0176",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 152.326,
+        "kp_to": 152.571,
+        "kp_center": 152.45,
+        "length_m": 245.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.12962412734504,
+          34.853403692235176
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0177",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "上り線",
+        "kp_from": 152.374,
+        "kp_to": 152.674,
+        "kp_center": 152.52,
+        "length_m": 300.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.12815928620424,
+          34.85285810590762
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0178",
+        "road": "新東名高速道路",
+        "ic_from": "藤枝岡部",
+        "ic_to": "島田金谷",
+        "direction": "下り線",
+        "kp_from": 152.586,
+        "kp_to": 152.76,
+        "kp_center": 152.67,
+        "length_m": 174.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.1147292306087,
+          34.84736739675447
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0179",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 154.042,
+        "kp_to": 154.073,
+        "kp_center": 154.06,
+        "length_m": 31.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.11255080989523,
+          34.8468057344006
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0180",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 154.106,
+        "kp_to": 154.428,
+        "kp_center": 154.27,
+        "length_m": 322.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.1132101962875,
+          34.84696468914307
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0181",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 154.114,
+        "kp_to": 154.294,
+        "kp_center": 154.2,
+        "length_m": 180.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.11253511021923,
+          34.84680194976387
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0182",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 154.163,
+        "kp_to": 154.374,
+        "kp_center": 154.27,
+        "length_m": 211.0,
+        "tiers": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.11001763973934,
+          34.84621343847643
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0183",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 154.449,
+        "kp_to": 154.568,
+        "kp_center": 154.51,
+        "length_m": 119.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.10989032908049,
+          34.84618844497285
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0184",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 154.457,
+        "kp_to": 154.584,
+        "kp_center": 154.52,
+        "length_m": 127.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.10207593633356,
+          34.845399
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0185",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 155.068,
+        "kp_to": 155.422,
+        "kp_center": 155.25,
+        "length_m": 354.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.10375583871883,
+          34.845399
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0186",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 155.073,
+        "kp_to": 155.109,
+        "kp_center": 155.09,
+        "length_m": 36.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.10257772535775,
+          34.845399
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0187",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 155.162,
+        "kp_to": 155.236,
+        "kp_center": 155.2,
+        "length_m": 74.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.1010887209708,
+          34.845399
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0188",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 155.266,
+        "kp_to": 155.405,
+        "kp_center": 155.34,
+        "length_m": 139.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.09933791361473,
+          34.845399
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0189",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 155.463,
+        "kp_to": 155.529,
+        "kp_center": 155.5,
+        "length_m": 66.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.09882521613352,
+          34.845399
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0190",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 155.527,
+        "kp_to": 155.559,
+        "kp_center": 155.54,
+        "length_m": 32.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.05187200706607,
+          34.842556300671205
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0191",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 159.866,
+        "kp_to": 159.907,
+        "kp_center": 159.89,
+        "length_m": 41.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.05164479219545,
+          34.84250866962053
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0192",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 159.882,
+        "kp_to": 159.934,
+        "kp_center": 159.91,
+        "length_m": 52.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0510150867386,
+          34.842379656795224
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0193",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 159.924,
+        "kp_to": 160.011,
+        "kp_center": 159.97,
+        "length_m": 87.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.04908880192795,
+          34.84196794800204
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0194",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 159.938,
+        "kp_to": 160.362,
+        "kp_center": 160.15,
+        "length_m": 424.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0490152707602,
+          34.841951060788254
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0195",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 159.946,
+        "kp_to": 160.368,
+        "kp_center": 160.16,
+        "length_m": 422.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.04965079013843,
+          34.842097014564565
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0196",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 159.973,
+        "kp_to": 160.22,
+        "kp_center": 160.1,
+        "length_m": 247.0,
+        "tiers": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.04988796688724,
+          34.84214873467934
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0197",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 160.011,
+        "kp_to": 160.137,
+        "kp_center": 160.07,
+        "length_m": 126.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0484112647396,
+          34.84181234438928
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0198",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 160.137,
+        "kp_to": 160.292,
+        "kp_center": 160.21,
+        "length_m": 155.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.04760242189457,
+          34.841626585037616
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0199",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 160.22,
+        "kp_to": 160.363,
+        "kp_center": 160.29,
+        "length_m": 143.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0466307600353,
+          34.841403432569706
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0200",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 160.36,
+        "kp_to": 160.408,
+        "kp_center": 160.38,
+        "length_m": 48.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.04437266091233,
+          34.840939026042456
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0201",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 160.41,
+        "kp_to": 160.785,
+        "kp_center": 160.6,
+        "length_m": 375.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.04451648002185,
+          34.84096498562034
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0202",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 160.42,
+        "kp_to": 160.748,
+        "kp_center": 160.58,
+        "length_m": 348.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.04558556700832,
+          34.84116339288801
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0203",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 160.466,
+        "kp_to": 160.501,
+        "kp_center": 160.48,
+        "length_m": 35.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0400918098282,
+          34.84036990634156
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0204",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 160.913,
+        "kp_to": 161.078,
+        "kp_center": 161.0,
+        "length_m": 165.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.03992399816988,
+          34.84035300191428
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0205",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 160.967,
+        "kp_to": 161.055,
+        "kp_center": 161.01,
+        "length_m": 88.0,
+        "tiers": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.03866713436676,
+          34.84023560218313
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0206",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 161.084,
+        "kp_to": 161.17,
+        "kp_center": 161.13,
+        "length_m": 86.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.03629278763574,
+          34.84012906098366
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0207",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 161.17,
+        "kp_to": 161.52,
+        "kp_center": 161.34,
+        "length_m": 350.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.03710965004322,
+          34.84016571506604
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0208",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 161.17,
+        "kp_to": 161.37,
+        "kp_center": 161.27,
+        "length_m": 200.0,
+        "tiers": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0365324006086,
+          34.84013981284782
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0209",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 161.178,
+        "kp_to": 161.468,
+        "kp_center": 161.32,
+        "length_m": 290.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0355412627623,
+          34.84009645727686
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0210",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 161.264,
+        "kp_to": 161.564,
+        "kp_center": 161.41,
+        "length_m": 300.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.03537776315568,
+          34.84010153045183
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0211",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 161.276,
+        "kp_to": 161.582,
+        "kp_center": 161.43,
+        "length_m": 306.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.03464746491284,
+          34.8401241906334
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0212",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 161.37,
+        "kp_to": 161.622,
+        "kp_center": 161.5,
+        "length_m": 252.0,
+        "tiers": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.03215878550822,
+          34.840224451824604
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0213",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 161.691,
+        "kp_to": 161.758,
+        "kp_center": 161.72,
+        "length_m": 67.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.03069394737463,
+          34.84034799239009
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0214",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 161.821,
+        "kp_to": 161.898,
+        "kp_center": 161.86,
+        "length_m": 77.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0309543630428,
+          34.840326029622894
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0215",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 161.807,
+        "kp_to": 161.864,
+        "kp_center": 161.84,
+        "length_m": 57.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0288276350859,
+          34.84050539222167
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0216",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 161.904,
+        "kp_to": 162.159,
+        "kp_center": 162.03,
+        "length_m": 255.0,
+        "tiers": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0232260131127,
+          34.841465576600704
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0217",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 162.547,
+        "kp_to": 162.567,
+        "kp_center": 162.56,
+        "length_m": 20.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0232678906585,
+          34.841455524671424
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0218",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 162.547,
+        "kp_to": 162.559,
+        "kp_center": 162.55,
+        "length_m": 12.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0224146356624,
+          34.84166033273057
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0219",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 162.611,
+        "kp_to": 162.658,
+        "kp_center": 162.63,
+        "length_m": 47.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0216451357579,
+          34.84184503693115
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0220",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 162.633,
+        "kp_to": 162.783,
+        "kp_center": 162.71,
+        "length_m": 150.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.02148809496106,
+          34.841882731665955
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0221",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 162.653,
+        "kp_to": 162.793,
+        "kp_center": 162.72,
+        "length_m": 140.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.02153520720012,
+          34.841871423245514
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0222",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 162.658,
+        "kp_to": 162.779,
+        "kp_center": 162.72,
+        "length_m": 121.0,
+        "tiers": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.02021110050828,
+          34.84219010887634
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0223",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 162.802,
+        "kp_to": 162.888,
+        "kp_center": 162.84,
+        "length_m": 86.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.01974532733766,
+          34.842302272250755
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0224",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 162.833,
+        "kp_to": 162.946,
+        "kp_center": 162.89,
+        "length_m": 113.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.01965112602227,
+          34.84232495697816
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0225",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 162.859,
+        "kp_to": 162.938,
+        "kp_center": 162.9,
+        "length_m": 79.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.01883994802853,
+          34.84252029768641
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0226",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 162.969,
+        "kp_to": 162.983,
+        "kp_center": 162.98,
+        "length_m": 14.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0192847875735,
+          34.84241317536253
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0227",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 162.922,
+        "kp_to": 162.945,
+        "kp_center": 162.93,
+        "length_m": 23.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.01138343885833,
+          34.843882548445094
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0228",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 163.638,
+        "kp_to": 163.717,
+        "kp_center": 163.68,
+        "length_m": 79.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0115247269955,
+          34.84387259761633
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0229",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 163.647,
+        "kp_to": 163.682,
+        "kp_center": 163.66,
+        "length_m": 35.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0100031624412,
+          34.84397976038765
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0230",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 163.71,
+        "kp_to": 163.899,
+        "kp_center": 163.8,
+        "length_m": 189.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.00961733714348,
+          34.84400693380466
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0231",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 163.71,
+        "kp_to": 163.97,
+        "kp_center": 163.84,
+        "length_m": 260.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.01014445057837,
+          34.84396980955888
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0232",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 163.725,
+        "kp_to": 163.858,
+        "kp_center": 163.79,
+        "length_m": 133.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.00877846855983,
+          34.84404138910951
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0233",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 163.888,
+        "kp_to": 163.946,
+        "kp_center": 163.92,
+        "length_m": 58.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.00738931211913,
+          34.844096968841015
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0234",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 163.958,
+        "kp_to": 164.131,
+        "kp_center": 164.04,
+        "length_m": 173.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.00776520150896,
+          34.84408192961955
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0235",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 163.97,
+        "kp_to": 164.05,
+        "kp_center": 164.01,
+        "length_m": 80.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0039203457083,
+          34.844094515379325
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0236",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 164.133,
+        "kp_to": 164.593,
+        "kp_center": 164.36,
+        "length_m": 460.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.00289697941994,
+          34.84404182101525
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0237",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 164.298,
+        "kp_to": 164.616,
+        "kp_center": 164.46,
+        "length_m": 318.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.00177018781525,
+          34.843983801156945
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0238",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 164.526,
+        "kp_to": 164.595,
+        "kp_center": 164.56,
+        "length_m": 69.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.99762302241345,
+          34.84338170945485
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0239",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 164.761,
+        "kp_to": 165.133,
+        "kp_center": 164.95,
+        "length_m": 372.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.997850445958,
+          34.8434287198563
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0240",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 164.763,
+        "kp_to": 165.088,
+        "kp_center": 164.93,
+        "length_m": 325.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9953618854697,
+          34.84284462315418
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0241",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 165.128,
+        "kp_to": 165.198,
+        "kp_center": 165.16,
+        "length_m": 70.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.99453797484097,
+          34.842608626454314
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0242",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 165.146,
+        "kp_to": 165.34,
+        "kp_center": 165.24,
+        "length_m": 194.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.99405907678803,
+          34.84247145337252
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0243",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 165.203,
+        "kp_to": 165.376,
+        "kp_center": 165.29,
+        "length_m": 173.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.99366256979795,
+          34.84235787996071
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0244",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 165.316,
+        "kp_to": 165.34,
+        "kp_center": 165.33,
+        "length_m": 24.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9922085137607,
+          34.841910966267314
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0245",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 165.403,
+        "kp_to": 165.538,
+        "kp_center": 165.47,
+        "length_m": 135.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.99105327154794,
+          34.841445147412266
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0246",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 165.438,
+        "kp_to": 165.739,
+        "kp_center": 165.59,
+        "length_m": 301.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.99073998552413,
+          34.84131882365496
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0247",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 165.593,
+        "kp_to": 165.648,
+        "kp_center": 165.62,
+        "length_m": 55.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9898784489587,
+          34.84097143332237
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0248",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 165.667,
+        "kp_to": 165.75,
+        "kp_center": 165.71,
+        "length_m": 83.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.98187897471362,
+          34.83783415746394
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0249",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 166.452,
+        "kp_to": 166.592,
+        "kp_center": 166.52,
+        "length_m": 140.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.98087487033493,
+          34.837533278742576
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0250",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 166.597,
+        "kp_to": 166.643,
+        "kp_center": 166.62,
+        "length_m": 46.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.97897221964053,
+          34.83696838606528
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0251",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 166.63,
+        "kp_to": 166.981,
+        "kp_center": 166.81,
+        "length_m": 351.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.97957310337674,
+          34.83714457516955
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0252",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 166.643,
+        "kp_to": 166.851,
+        "kp_center": 166.75,
+        "length_m": 208.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.97831997832,
+          34.8367771380632
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0253",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上下線共有",
+        "kp_from": 166.728,
+        "kp_to": 167.01,
+        "kp_center": 166.87,
+        "length_m": 282.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.978427829247,
+          34.836808761748586
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0254",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 166.81,
+        "kp_to": 166.907,
+        "kp_center": 166.86,
+        "length_m": 97.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9771079393307,
+          34.83642174807509
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0255",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 166.94,
+        "kp_to": 167.034,
+        "kp_center": 166.99,
+        "length_m": 94.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9748790201724,
+          34.83576819191051
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0256",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 167.108,
+        "kp_to": 167.3,
+        "kp_center": 167.2,
+        "length_m": 192.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.97404199849862,
+          34.83552249584536
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0257",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 167.238,
+        "kp_to": 167.333,
+        "kp_center": 167.29,
+        "length_m": 95.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9559596680812,
+          34.82979955119921
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0258",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "下り線",
+        "kp_from": 168.888,
+        "kp_to": 169.238,
+        "kp_center": 169.06,
+        "length_m": 350.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.95579010342982,
+          34.829737993306345
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0259",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 168.92,
+        "kp_to": 169.24,
+        "kp_center": 169.08,
+        "length_m": 320.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9510004403575,
+          34.8279925426506
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0260",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 169.511,
+        "kp_to": 169.61,
+        "kp_center": 169.56,
+        "length_m": 99.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.94843762248505,
+          34.82704992070476
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0261",
+        "road": "新東名高速道路",
+        "ic_from": "島田金谷",
+        "ic_to": "森掛川",
+        "direction": "上り線",
+        "kp_from": 169.763,
+        "kp_to": 169.873,
+        "kp_center": 169.82,
+        "length_m": 110.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9356246727466,
+          34.82342074989553
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0262",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 170.928,
+        "kp_to": 171.158,
+        "kp_center": 171.04,
+        "length_m": 230.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9360841170728,
+          34.82350915813569
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0263",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 170.945,
+        "kp_to": 171.057,
+        "kp_center": 171.0,
+        "length_m": 112.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9362255157084,
+          34.82353961078633
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0264",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 170.956,
+        "kp_to": 171.02,
+        "kp_center": 170.99,
+        "length_m": 64.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.93403928285608,
+          34.82320012149251
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0265",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 171.165,
+        "kp_to": 171.207,
+        "kp_center": 171.19,
+        "length_m": 42.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.92807477141233,
+          34.822623736559684
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0266",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 171.673,
+        "kp_to": 171.768,
+        "kp_center": 171.72,
+        "length_m": 95.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.90754267659366,
+          34.82471325714389
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0267",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 173.255,
+        "kp_to": 173.89,
+        "kp_center": 173.57,
+        "length_m": 635.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9075265995351,
+          34.82471744626216
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0268",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 173.258,
+        "kp_to": 173.89,
+        "kp_center": 173.57,
+        "length_m": 632.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.90351258664018,
+          34.825915951750886
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0269",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 173.89,
+        "kp_to": 174.018,
+        "kp_center": 173.95,
+        "length_m": 128.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.90376286066495,
+          34.82583304204309
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0270",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 173.89,
+        "kp_to": 173.97,
+        "kp_center": 173.93,
+        "length_m": 80.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8936063128816,
+          34.82854052951966
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0271",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 174.697,
+        "kp_to": 175.067,
+        "kp_center": 174.88,
+        "length_m": 370.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.89365041447417,
+          34.82853325925446
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0272",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 174.768,
+        "kp_to": 174.988,
+        "kp_center": 174.88,
+        "length_m": 220.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.88820164413843,
+          34.828998
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0273",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 175.301,
+        "kp_to": 175.432,
+        "kp_center": 175.37,
+        "length_m": 131.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.88773495122143,
+          34.828998
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0274",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 175.348,
+        "kp_to": 175.468,
+        "kp_center": 175.41,
+        "length_m": 120.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.88463145795228,
+          34.82891387361299
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0275",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 175.651,
+        "kp_to": 175.718,
+        "kp_center": 175.68,
+        "length_m": 67.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.88351297435554,
+          34.82878074007344
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0276",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 175.744,
+        "kp_to": 175.826,
+        "kp_center": 175.78,
+        "length_m": 82.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.88292312728464,
+          34.828710530346115
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0277",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 175.775,
+        "kp_to": 175.901,
+        "kp_center": 175.84,
+        "length_m": 126.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.87745468666705,
+          34.82765895274307
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0278",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 176.293,
+        "kp_to": 176.383,
+        "kp_center": 176.34,
+        "length_m": 90.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.87658965190525,
+          34.827456111792515
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0279",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 176.407,
+        "kp_to": 176.429,
+        "kp_center": 176.42,
+        "length_m": 22.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.87453059900574,
+          34.82693839723088
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0280",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 176.484,
+        "kp_to": 176.735,
+        "kp_center": 176.61,
+        "length_m": 251.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8737600846714,
+          34.826749966679444
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0281",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 176.544,
+        "kp_to": 176.818,
+        "kp_center": 176.68,
+        "length_m": 274.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.87159311310455,
+          34.826255745094016
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0282",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 176.735,
+        "kp_to": 177.027,
+        "kp_center": 176.88,
+        "length_m": 292.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.87024998945176,
+          34.825986221375004
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0283",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 176.818,
+        "kp_to": 177.19,
+        "kp_center": 177.0,
+        "length_m": 372.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.85981270297498,
+          34.82516589238358
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0284",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 177.838,
+        "kp_to": 178.042,
+        "kp_center": 177.94,
+        "length_m": 204.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.85921726917596,
+          34.8251829585489
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0285",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 177.956,
+        "kp_to": 178.03,
+        "kp_center": 177.99,
+        "length_m": 74.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.85921726917596,
+          34.8251829585489
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0286",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 177.958,
+        "kp_to": 178.028,
+        "kp_center": 177.99,
+        "length_m": 70.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.85746154946355,
+          34.825335168884116
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0287",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 178.03,
+        "kp_to": 178.27,
+        "kp_center": 178.15,
+        "length_m": 240.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.85739445189492,
+          34.8253409858396
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0288",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 178.042,
+        "kp_to": 178.27,
+        "kp_center": 178.16,
+        "length_m": 228.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.85634325665308,
+          34.82543211814222
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0289",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 178.11,
+        "kp_to": 178.39,
+        "kp_center": 178.25,
+        "length_m": 280.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.85404898801372,
+          34.82570201726233
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0290",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 178.358,
+        "kp_to": 178.555,
+        "kp_center": 178.46,
+        "length_m": 197.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8539017020365,
+          34.8257322145219
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0291",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 178.37,
+        "kp_to": 178.57,
+        "kp_center": 178.47,
+        "length_m": 200.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8511032684693,
+          34.8263059624538
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0292",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 178.555,
+        "kp_to": 178.898,
+        "kp_center": 178.73,
+        "length_m": 343.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.85126691955512,
+          34.826272409943165
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0293",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 178.57,
+        "kp_to": 178.853,
+        "kp_center": 178.71,
+        "length_m": 283.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.85122873430177,
+          34.82628023886231
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0294",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 178.59,
+        "kp_to": 178.84,
+        "kp_center": 178.72,
+        "length_m": 250.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.84780075054866,
+          34.82722548485033
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0295",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "下り線",
+        "kp_from": 178.898,
+        "kp_to": 179.176,
+        "kp_center": 179.04,
+        "length_m": 278.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8466734876462,
+          34.827570931221175
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0296",
+        "road": "新東名高速道路",
+        "ic_from": "森掛川",
+        "ic_to": "浜松浜北",
+        "direction": "上り線",
+        "kp_from": 179.053,
+        "kp_to": 179.235,
+        "kp_center": 179.14,
+        "length_m": 182.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7835836037722,
+          34.838928836490894
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0297",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 185.103,
+        "kp_to": 185.266,
+        "kp_center": 185.18,
+        "length_m": 163.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7831016300204,
+          34.83887397117806
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0298",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 185.115,
+        "kp_to": 185.348,
+        "kp_center": 185.23,
+        "length_m": 233.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.78040876957579,
+          34.83854387956695
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0299",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 185.479,
+        "kp_to": 185.51,
+        "kp_center": 185.49,
+        "length_m": 31.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.78032181480896,
+          34.838532782987386
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0300",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 185.488,
+        "kp_to": 185.518,
+        "kp_center": 185.5,
+        "length_m": 30.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.77785301209624,
+          34.83820855789522
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0301",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 185.537,
+        "kp_to": 185.952,
+        "kp_center": 185.74,
+        "length_m": 415.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7780472103893,
+          34.83823424490533
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0302",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 185.539,
+        "kp_to": 185.912,
+        "kp_center": 185.73,
+        "length_m": 373.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7755373078329,
+          34.83793818065953
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0303",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 185.954,
+        "kp_to": 185.987,
+        "kp_center": 185.97,
+        "length_m": 33.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7702971893618,
+          34.83767315122254
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0304",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 186.273,
+        "kp_to": 186.683,
+        "kp_center": 186.48,
+        "length_m": 410.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.77024045029984,
+          34.83767707695223
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0305",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 186.308,
+        "kp_to": 186.659,
+        "kp_center": 186.48,
+        "length_m": 351.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.76536529015635,
+          34.838134064863986
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0306",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 186.766,
+        "kp_to": 187.15,
+        "kp_center": 186.96,
+        "length_m": 384.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.76511621093226,
+          34.83817338444905
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0307",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 186.815,
+        "kp_to": 187.15,
+        "kp_center": 186.98,
+        "length_m": 335.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.76117981594544,
+          34.83903375794164
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0308",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 187.15,
+        "kp_to": 187.603,
+        "kp_center": 187.38,
+        "length_m": 453.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.76117981594544,
+          34.83903375794164
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0309",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 187.15,
+        "kp_to": 187.603,
+        "kp_center": 187.38,
+        "length_m": 453.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7550115056423,
+          34.840623677166256
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0310",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 187.785,
+        "kp_to": 188.217,
+        "kp_center": 188.0,
+        "length_m": 432.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.75249727194478,
+          34.84131172385547
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0311",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 187.837,
+        "kp_to": 188.677,
+        "kp_center": 188.26,
+        "length_m": 840.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.74439433359527,
+          34.843527745805865
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0312",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 188.217,
+        "kp_to": 189.947,
+        "kp_center": 189.08,
+        "length_m": 1730.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.73630383932348,
+          34.84570882423974
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0313",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 189.867,
+        "kp_to": 189.942,
+        "kp_center": 189.9,
+        "length_m": 75.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7353962443608,
+          34.84595979051325
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0314",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 189.987,
+        "kp_to": 190.007,
+        "kp_center": 190.0,
+        "length_m": 20.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.73145534913868,
+          34.84704567037051
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0315",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 190.3,
+        "kp_to": 190.497,
+        "kp_center": 190.4,
+        "length_m": 197.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.73167137046326,
+          34.84698636585674
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0316",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 190.302,
+        "kp_to": 190.451,
+        "kp_center": 190.38,
+        "length_m": 149.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7298008221755,
+          34.8474998890328
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0317",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 190.507,
+        "kp_to": 190.627,
+        "kp_center": 190.57,
+        "length_m": 120.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.72749002682755,
+          34.848138593143155
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0318",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 190.778,
+        "kp_to": 190.827,
+        "kp_center": 190.8,
+        "length_m": 49.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7248331931984,
+          34.84890536126215
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0319",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 191.062,
+        "kp_to": 191.087,
+        "kp_center": 191.07,
+        "length_m": 25.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.72192343372305,
+          34.849734818903855
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0320",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 191.147,
+        "kp_to": 191.597,
+        "kp_center": 191.37,
+        "length_m": 450.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7208084788926,
+          34.8500396893653
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0321",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 191.356,
+        "kp_to": 191.615,
+        "kp_center": 191.49,
+        "length_m": 259.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.71794528161183,
+          34.850823475792126
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0322",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 191.597,
+        "kp_to": 191.957,
+        "kp_center": 191.78,
+        "length_m": 360.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.71844104176358,
+          34.850687035455266
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0323",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 191.615,
+        "kp_to": 191.838,
+        "kp_center": 191.73,
+        "length_m": 223.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.71622438559763,
+          34.85130256349006
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0324",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 191.838,
+        "kp_to": 192.067,
+        "kp_center": 191.95,
+        "length_m": 229.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.71666073814822,
+          34.851181085412804
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0325",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 191.87,
+        "kp_to": 191.946,
+        "kp_center": 191.91,
+        "length_m": 76.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.71509673293872,
+          34.85161649559982
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0326",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 192.028,
+        "kp_to": 192.107,
+        "kp_center": 192.07,
+        "length_m": 79.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68461231602913,
+          34.862027752747
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0327",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 195.241,
+        "kp_to": 195.296,
+        "kp_center": 195.27,
+        "length_m": 55.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68486258722348,
+          34.86189939388144
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0328",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 195.218,
+        "kp_to": 195.262,
+        "kp_center": 195.24,
+        "length_m": 44.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68477916349204,
+          34.861942180169954
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0329",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 195.241,
+        "kp_to": 195.258,
+        "kp_center": 195.25,
+        "length_m": 17.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68392297256403,
+          34.862381302604774
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0330",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 195.287,
+        "kp_to": 195.407,
+        "kp_center": 195.35,
+        "length_m": 120.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68425227676713,
+          34.86221240936061
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0331",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 195.254,
+        "kp_to": 195.365,
+        "kp_center": 195.31,
+        "length_m": 111.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68387028389157,
+          34.86240832552384
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0332",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 195.265,
+        "kp_to": 195.441,
+        "kp_center": 195.35,
+        "length_m": 176.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68338077597474,
+          34.8626784133
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0333",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 195.383,
+        "kp_to": 195.437,
+        "kp_center": 195.41,
+        "length_m": 54.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68295476377745,
+          34.86293457264018
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0334",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 195.432,
+        "kp_to": 195.49,
+        "kp_center": 195.46,
+        "length_m": 58.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68245357295706,
+          34.863235936569794
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0335",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 195.471,
+        "kp_to": 195.571,
+        "kp_center": 195.52,
+        "length_m": 100.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6825203983998,
+          34.863195754712514
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0336",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 195.504,
+        "kp_to": 195.522,
+        "kp_center": 195.51,
+        "length_m": 18.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68160990174277,
+          34.86374323251798
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0337",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 195.527,
+        "kp_to": 195.717,
+        "kp_center": 195.62,
+        "length_m": 190.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.68159737197226,
+          34.86375076661623
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0338",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 195.606,
+        "kp_to": 195.641,
+        "kp_center": 195.62,
+        "length_m": 35.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6805699307905,
+          34.86436856267194
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0339",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 195.717,
+        "kp_to": 195.776,
+        "kp_center": 195.75,
+        "length_m": 59.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6798807934125,
+          34.864782938075166
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0340",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 195.787,
+        "kp_to": 195.871,
+        "kp_center": 195.83,
+        "length_m": 84.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.67561703653124,
+          34.86781571147612
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0341",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 196.309,
+        "kp_to": 196.439,
+        "kp_center": 196.37,
+        "length_m": 130.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6749478091372,
+          34.86830422215112
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0342",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 196.44,
+        "kp_to": 196.481,
+        "kp_center": 196.46,
+        "length_m": 41.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6695104208607,
+          34.87304042289822
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0343",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 197.2,
+        "kp_to": 197.254,
+        "kp_center": 197.23,
+        "length_m": 54.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.66925582766794,
+          34.87328106387101
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0344",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "下り線",
+        "kp_from": 197.252,
+        "kp_to": 197.277,
+        "kp_center": 197.26,
+        "length_m": 25.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.66938814137865,
+          34.873155876194275
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0345",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 197.219,
+        "kp_to": 197.271,
+        "kp_center": 197.25,
+        "length_m": 52.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.66805874779888,
+          34.87441455751146
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0346",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 197.365,
+        "kp_to": 197.517,
+        "kp_center": 197.44,
+        "length_m": 152.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.66820795888736,
+          34.87427327218517
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0347",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 197.371,
+        "kp_to": 197.467,
+        "kp_center": 197.42,
+        "length_m": 96.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.66568029456133,
+          34.876799612818175
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0348",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上り線",
+        "kp_from": 197.784,
+        "kp_to": 197.824,
+        "kp_center": 197.8,
+        "length_m": 40.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6655512927874,
+          34.87694852893439
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0349",
+        "road": "新東名高速道路",
+        "ic_from": "浜松浜北",
+        "ic_to": "浜松いなさＪＣＴ",
+        "direction": "上下線共有",
+        "kp_from": 197.816,
+        "kp_to": 197.835,
+        "kp_center": 197.83,
+        "length_m": 19.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.65169166524873,
+          34.887662511903784
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0350",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上下線無関係",
+        "kp_from": 199.408,
+        "kp_to": 199.658,
+        "kp_center": 199.53,
+        "length_m": 250.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.65251336631115,
+          34.88725494822189
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0351",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上下線無関係",
+        "kp_from": 199.425,
+        "kp_to": 199.481,
+        "kp_center": 199.45,
+        "length_m": 56.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.65073802213536,
+          34.88808801826987
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0352",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上下線無関係",
+        "kp_from": 199.589,
+        "kp_to": 199.658,
+        "kp_center": 199.62,
+        "length_m": 69.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.62685413428244,
+          34.89613449882156
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0353",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 201.764,
+        "kp_to": 201.809,
+        "kp_center": 201.79,
+        "length_m": 0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64926015361928,
+          34.88868971555656
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0354",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上下線無関係",
+        "kp_from": 199.707,
+        "kp_to": 199.815,
+        "kp_center": 199.76,
+        "length_m": 108.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64829111392783,
+          34.88902195772438
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0355",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 199.74,
+        "kp_to": 199.957,
+        "kp_center": 199.85,
+        "length_m": 217.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64744389636903,
+          34.889312432305395
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0356",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 199.83,
+        "kp_to": 200.02,
+        "kp_center": 199.93,
+        "length_m": 190.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6477484517006,
+          34.88920801333837
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0357",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 199.838,
+        "kp_to": 199.957,
+        "kp_center": 199.9,
+        "length_m": 119.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64695628281908,
+          34.88946483503868
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0358",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 199.88,
+        "kp_to": 200.057,
+        "kp_center": 199.97,
+        "length_m": 177.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64560797687636,
+          34.8898364832851
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0359",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 200.057,
+        "kp_to": 200.117,
+        "kp_center": 200.09,
+        "length_m": 60.0,
+        "tiers": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64617688233744,
+          34.88967966967902
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0360",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 199.957,
+        "kp_to": 200.117,
+        "kp_center": 200.04,
+        "length_m": 160.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64365685572486,
+          34.890342268228636
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0361",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 200.117,
+        "kp_to": 200.398,
+        "kp_center": 200.26,
+        "length_m": 281.0,
+        "tiers": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64446258220667,
+          34.890146760878295
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0362",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 200.117,
+        "kp_to": 200.258,
+        "kp_center": 200.19,
+        "length_m": 141.0,
+        "tiers": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64255761459606,
+          34.890608996113755
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0363",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 200.283,
+        "kp_to": 200.423,
+        "kp_center": 200.35,
+        "length_m": 140.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64097182526805,
+          34.89098431132049
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0364",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 200.458,
+        "kp_to": 200.523,
+        "kp_center": 200.49,
+        "length_m": 65.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.64085647107143,
+          34.89101153957331
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0365",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 200.488,
+        "kp_to": 200.513,
+        "kp_center": 200.5,
+        "length_m": 25.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6398471218509,
+          34.89124978678554
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0366",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 200.553,
+        "kp_to": 200.623,
+        "kp_center": 200.59,
+        "length_m": 70.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6321199984461,
+          34.893523308889165
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0367",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 201.243,
+        "kp_to": 201.303,
+        "kp_center": 201.27,
+        "length_m": 60.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.63062369979593,
+          34.89415036123458
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0368",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 201.383,
+        "kp_to": 201.443,
+        "kp_center": 201.41,
+        "length_m": 60.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6283891069525,
+          34.895254960537414
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0369",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 201.548,
+        "kp_to": 201.713,
+        "kp_center": 201.63,
+        "length_m": 165.0,
+        "tiers": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.62737736359543,
+          34.89582929593962
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0370",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 201.703,
+        "kp_to": 201.763,
+        "kp_center": 201.73,
+        "length_m": 60.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.627204587281,
+          34.89592730677187
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0371",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 201.738,
+        "kp_to": 201.763,
+        "kp_center": 201.75,
+        "length_m": 25.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6247305922605,
+          34.897526757563895
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0372",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 201.983,
+        "kp_to": 202.043,
+        "kp_center": 202.01,
+        "length_m": 60.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.62455036074653,
+          34.89765685426297
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0373",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 202.003,
+        "kp_to": 202.063,
+        "kp_center": 202.03,
+        "length_m": 60.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.62346897166276,
+          34.89843743445743
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0374",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 202.123,
+        "kp_to": 202.183,
+        "kp_center": 202.15,
+        "length_m": 60.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.62346897166276,
+          34.89843743445743
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0375",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 202.123,
+        "kp_to": 202.183,
+        "kp_center": 202.15,
+        "length_m": 60.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.62035809037894,
+          34.90075353017544
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0376",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 202.483,
+        "kp_to": 202.523,
+        "kp_center": 202.5,
+        "length_m": 40.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.62046854839554,
+          34.900670223853034
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0377",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 202.448,
+        "kp_to": 202.533,
+        "kp_center": 202.49,
+        "length_m": 85.0,
+        "tiers": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.62007089953582,
+          34.9009701266137
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0378",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 202.533,
+        "kp_to": 202.538,
+        "kp_center": 202.54,
+        "length_m": 5.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6187171747692,
+          34.9020171058526
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0379",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 202.638,
+        "kp_to": 202.743,
+        "kp_center": 202.69,
+        "length_m": 105.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.61917299237535,
+          34.9016601160613
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0380",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 202.553,
+        "kp_to": 202.723,
+        "kp_center": 202.64,
+        "length_m": 170.0,
+        "tiers": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6175274366361,
+          34.90295551859069
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0381",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 202.773,
+        "kp_to": 202.883,
+        "kp_center": 202.83,
+        "length_m": 110.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.61791406755836,
+          34.90264608786584
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0382",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 202.723,
+        "kp_to": 202.843,
+        "kp_center": 202.78,
+        "length_m": 120.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6148899866996,
+          34.905073770849
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0383",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 203.048,
+        "kp_to": 203.223,
+        "kp_center": 203.14,
+        "length_m": 175.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6150860877446,
+          34.90492141546507
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0384",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 203.033,
+        "kp_to": 203.193,
+        "kp_center": 203.11,
+        "length_m": 160.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.61393127047964,
+          34.9058186193927
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0385",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 203.193,
+        "kp_to": 203.298,
+        "kp_center": 203.25,
+        "length_m": 105.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6051063817998,
+          34.9107327702445
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0386",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 204.068,
+        "kp_to": 204.208,
+        "kp_center": 204.14,
+        "length_m": 140.0,
+        "tiers": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6053493163618,
+          34.91063587730715
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0387",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 204.058,
+        "kp_to": 204.173,
+        "kp_center": 204.12,
+        "length_m": 115.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.57335186933508,
+          34.91741821735349
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0388",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 206.833,
+        "kp_to": 206.918,
+        "kp_center": 206.88,
+        "length_m": 85.0,
+        "tiers": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.56459454268955,
+          34.91891462442758
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0389",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 207.568,
+        "kp_to": 207.673,
+        "kp_center": 207.62,
+        "length_m": 105.0,
+        "tiers": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.5621668499976,
+          34.919373566670494
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0390",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 207.703,
+        "kp_to": 207.953,
+        "kp_center": 207.83,
+        "length_m": 250.0,
+        "tiers": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.54310294631526,
+          34.92469157120718
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0391",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 209.403,
+        "kp_to": 209.613,
+        "kp_center": 209.51,
+        "length_m": 210.0,
+        "tiers": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.54316176444013,
+          34.9246816809415
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0392",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "上り線",
+        "kp_from": 209.403,
+        "kp_to": 209.603,
+        "kp_center": 209.5,
+        "length_m": 200.0,
+        "tiers": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.54044566749573,
+          34.92509216951366
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0393",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 209.633,
+        "kp_to": 209.833,
+        "kp_center": 209.73,
+        "length_m": 200.0,
+        "tiers": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.53861566110604,
+          34.925370944753574
+        ]
+      },
+      "properties": {
+        "slope_id": "NORI_0394",
+        "road": "新東名高速道路",
+        "ic_from": "浜松いなさＪＣＴ",
+        "ic_to": "新城",
+        "direction": "下り線",
+        "kp_from": 209.833,
+        "kp_to": 209.943,
+        "kp_center": 209.89,
+        "length_m": 110.0,
+        "tiers": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighwayLens - 高速道路インフラ監視システム</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .header-left { display: flex; align-items: center; gap: 16px; }
+        .header-right { display: flex; align-items: center; gap: 12px; }
+        .logo { font-size: 22px; font-weight: 700; }
+        .logo span { color: #4ade80; }
+        .header-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.15);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+        .header-info-icon { font-size: 16px; }
+        .lang-toggle {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            padding: 6px 12px;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-toggle:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Main Layout */
+        .main-container {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            height: calc(100vh - 64px);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: white;
+            border-right: 1px solid #e0e0e0;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Summary Cards */
+        .summary-section {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .summary-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 12px;
+        }
+        .summary-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .summary-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        .summary-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .summary-card.danger { border-color: #ef4444; background: #fef2f2; }
+        .summary-card.warning { border-color: #f97316; background: #fff7ed; }
+        .summary-card.caution { border-color: #eab308; background: #fefce8; }
+        .summary-card.safe { border-color: #22c55e; background: #f0fdf4; }
+        .summary-count { font-size: 36px; font-weight: 700; line-height: 1; }
+        .summary-card.danger .summary-count { color: #dc2626; }
+        .summary-card.warning .summary-count { color: #ea580c; }
+        .summary-card.caution .summary-count { color: #ca8a04; }
+        .summary-card.safe .summary-count { color: #16a34a; }
+        .summary-label { font-size: 12px; color: #666; margin-top: 6px; font-weight: 500; }
+        .summary-action {
+            font-size: 10px;
+            margin-top: 8px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: rgba(0,0,0,0.05);
+        }
+
+        /* Alert List */
+        .alert-section {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .alert-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .alert-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+        .alert-count {
+            background: #ef4444;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .route-filter {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+        .route-filter-btn {
+            flex: 1;
+            padding: 7px 0;
+            border: 1.5px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+            font-size: 12px;
+            font-weight: 600;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+        .route-filter-btn:hover { background: #f3f4f6; }
+        .route-filter-btn.active {
+            border-color: #3b82f6;
+            background: #eff6ff;
+            color: #2563eb;
+        }
+        .route-filter-btn.active.shintomei {
+            border-color: #8b5cf6;
+            background: #f5f3ff;
+            color: #7c3aed;
+        }
+        .alert-list { display: flex; flex-direction: column; gap: 10px; }
+        .alert-item {
+            background: white;
+            border-radius: 12px;
+            padding: 14px;
+            border-left: 4px solid;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .alert-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+        .alert-item.danger { border-color: #ef4444; background: #fef2f2; }
+        .alert-item.warning { border-color: #f97316; background: #fff7ed; }
+        .alert-item.caution { border-color: #eab308; background: #fefce8; }
+        .alert-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        .alert-location {
+            font-weight: 600;
+            font-size: 14px;
+            color: #333;
+        }
+        .alert-badge {
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .alert-item.danger .alert-badge { background: #fee2e2; color: #dc2626; }
+        .alert-item.warning .alert-badge { background: #ffedd5; color: #ea580c; }
+        .alert-item.caution .alert-badge { background: #fef9c3; color: #ca8a04; }
+        .alert-status {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .alert-action {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: #2563eb;
+            font-weight: 500;
+        }
+        .alert-action-icon { font-size: 14px; }
+
+        .no-alerts {
+            text-align: center;
+            padding: 40px 20px;
+            color: #888;
+        }
+        .no-alerts-icon { font-size: 48px; margin-bottom: 12px; }
+        .no-alerts-text { font-size: 14px; }
+
+        /* Footer */
+        .sidebar-footer {
+            padding: 16px 20px;
+            border-top: 1px solid #eee;
+            background: #f8f9fa;
+        }
+        .data-info {
+            font-size: 11px;
+            color: #888;
+            line-height: 1.6;
+        }
+        .update-time {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Map Container */
+        .map-container {
+            position: relative;
+            overflow: visible;
+        }
+        #map {
+            width: 100%;
+            height: 100%;
+            /* Ensure bottom controls are not clipped */
+        }
+
+        /* Leaflet control adjustments */
+        .leaflet-control-zoom {
+            border: none !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+            margin: 10px !important;
+        }
+        .leaflet-control-zoom a {
+            width: 32px !important;
+            height: 32px !important;
+            line-height: 32px !important;
+            font-size: 16px !important;
+        }
+        .leaflet-control-layers {
+            border: none !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+            border-radius: 8px !important;
+            margin: 10px !important;
+        }
+        .leaflet-control-scale {
+            margin: 10px !important;
+        }
+        .leaflet-control-attribution {
+            background: rgba(255,255,255,0.9) !important;
+            padding: 4px 10px !important;
+            font-size: 10px !important;
+            margin-bottom: 15px !important;
+            margin-right: 10px !important;
+            border-radius: 4px !important;
+            line-height: 1.4 !important;
+        }
+
+        /* Map Controls */
+        .map-controls {
+            position: absolute;
+            top: 80px;
+            right: 10px;
+            z-index: 1000;
+        }
+        .map-btn {
+            background: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 12px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .map-btn:hover { background: #f0f0f0; }
+        .map-btn.active { background: #e0f2fe; color: #0369a1; }
+
+        /* Legend */
+        .map-legend {
+            position: absolute;
+            bottom: 50px;
+            left: 10px;
+            z-index: 999;
+            background: white;
+            border-radius: 8px;
+            padding: 10px 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            font-size: 11px;
+        }
+        .legend-title {
+            font-size: 11px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 5px;
+            font-size: 11px;
+            color: #444;
+        }
+        .legend-item:last-child { margin-bottom: 0; }
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            flex-shrink: 0;
+        }
+        .legend-dot.danger { background: #ef4444; }
+        .legend-dot.warning { background: #f97316; }
+        .legend-dot.caution { background: #eab308; }
+        .legend-dot.safe { background: #22c55e; }
+        .legend-dot.unknown { background: #9ca3af; }
+
+        /* Popup Styles */
+        .leaflet-popup-content-wrapper {
+            border-radius: 12px !important;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+        }
+        .leaflet-popup-content {
+            margin: 12px 14px !important;
+            font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif !important;
+        }
+        .popup-content {
+            min-width: 260px;
+            max-width: 320px;
+        }
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        .popup-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #333;
+        }
+        .popup-score {
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        .popup-score.danger { background: #fee2e2; color: #dc2626; }
+        .popup-score.warning { background: #ffedd5; color: #ea580c; }
+        .popup-score.caution { background: #fef9c3; color: #ca8a04; }
+        .popup-score.safe { background: #dcfce7; color: #16a34a; }
+        .popup-score.unknown { background: #f3f4f6; color: #6b7280; }
+        .popup-status {
+            font-size: 13px;
+            color: #333;
+            margin-bottom: 10px;
+            padding: 8px 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            line-height: 1.4;
+        }
+        .popup-details {
+            font-size: 11px;
+            color: #666;
+        }
+        .popup-detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 0;
+        }
+        .popup-insights {
+            margin-top: 10px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+        .popup-insights-title {
+            font-size: 11px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .insight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 6px 8px;
+            margin-bottom: 4px;
+            border-radius: 6px;
+            background: #f8f9fa;
+        }
+        .insight-item:last-child { margin-bottom: 0; }
+        .insight-item.high { background: #fef2f2; }
+        .insight-item.medium { background: #fffbeb; }
+        .insight-item.low { background: #f0fdf4; }
+        .insight-icon { font-size: 16px; line-height: 1; }
+        .insight-content { flex: 1; min-width: 0; }
+        .insight-label { font-size: 9px; color: #888; text-transform: uppercase; }
+        .insight-value { font-size: 12px; font-weight: 500; color: #333; line-height: 1.3; }
+        .insight-detail { font-size: 10px; color: #666; margin-top: 1px; }
+
+        /* Loading State */
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            color: #888;
+        }
+        .loading-spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid #e0e0e0;
+            border-top-color: #2563eb;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading-text { margin-top: 12px; font-size: 13px; }
+
+        /* ====== Agent Toggle (Header) ====== */
+        .agent-toggle {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 8px;
+            padding: 6px 14px;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .agent-toggle:hover { background: rgba(255,255,255,0.25); }
+        .agent-toggle.active {
+            background: rgba(74,222,128,0.25);
+            border-color: rgba(74,222,128,0.5);
+        }
+
+        /* ====== Chat Panel ====== */
+
+        .chat-panel {
+            position: fixed;
+            top: 0;
+            right: -420px;
+            width: 400px;
+            height: 100vh;
+            background: white;
+            z-index: 1200;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -4px 0 24px rgba(0,0,0,0.15);
+            transition: right 0.3s ease;
+        }
+        .chat-panel.open { right: 0; }
+
+        .chat-panel-header {
+            background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+            color: white;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .chat-panel-title { font-size: 16px; font-weight: 600; }
+        .chat-model-switch {
+            display: flex;
+            background: rgba(0,0,0,0.2);
+            border-radius: 6px;
+            padding: 2px;
+        }
+        .chat-model-btn {
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.6);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .chat-model-btn:hover { color: white; }
+        .chat-model-btn.active {
+            background: rgba(255,255,255,0.25);
+            color: white;
+        }
+
+        .chat-close-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .chat-suggest {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 20px 0;
+        }
+        .chat-suggest-btn {
+            background: #f0f4ff;
+            border: 1px solid #c7d2fe;
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 13px;
+            color: #4338ca;
+            cursor: pointer;
+            text-align: left;
+            transition: background 0.2s;
+        }
+        .chat-suggest-btn:hover { background: #e0e7ff; }
+
+        .chat-msg {
+            max-width: 85%;
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-size: 13px;
+            line-height: 1.6;
+            word-break: break-word;
+        }
+        .chat-msg.user {
+            align-self: flex-end;
+            background: #2563eb;
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+        .chat-msg.assistant {
+            align-self: flex-start;
+            background: #f3f4f6;
+            color: #333;
+            border-bottom-left-radius: 4px;
+        }
+        .chat-msg.assistant .seg-link {
+            color: #2563eb;
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        .chat-msg.assistant .seg-link:hover { color: #1d4ed8; }
+        .chat-msg.thinking {
+            align-self: flex-start;
+            background: #f3f4f6;
+            color: #888;
+            font-style: italic;
+        }
+        .chat-typing-dots { display: inline-flex; gap: 4px; align-items: center; height: 20px; }
+        .chat-typing-dots span {
+            width: 6px; height: 6px; border-radius: 50%; background: #999;
+            animation: chatBounce 1.4s ease-in-out infinite;
+        }
+        .chat-typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .chat-typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes chatBounce {
+            0%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-6px); }
+        }
+        .chat-msg.appear {
+            animation: chatFadeIn 0.25s ease-out;
+        }
+        @keyframes chatFadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .chat-input-area {
+            border-top: 1px solid #eee;
+            padding: 12px 16px;
+            display: flex;
+            gap: 8px;
+        }
+        .chat-input {
+            flex: 1;
+            border: 1.5px solid #d1d5db;
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 13px;
+            outline: none;
+            font-family: inherit;
+            resize: none;
+            min-height: 40px;
+            max-height: 100px;
+        }
+        .chat-input:focus { border-color: #2563eb; }
+        .chat-send-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 0 16px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .chat-send-btn:hover { background: #1d4ed8; }
+        .chat-send-btn:disabled { background: #93c5fd; cursor: not-allowed; }
+
+        /* ====== Popup Comment & Inspection Sections ====== */
+        .popup-actions-bar {
+            display: flex;
+            gap: 6px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+        .popup-action-btn {
+            flex: 1;
+            padding: 6px 0;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background: white;
+            font-size: 11px;
+            cursor: pointer;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        .popup-action-btn:hover { background: #f3f4f6; }
+
+        /* ====== Popup Inspection History ====== */
+        .popup-inspections-section {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+        .popup-inspections-title { font-size: 11px; font-weight: 600; color: #666; margin-bottom: 6px; }
+        .popup-inspection-item {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 6px 8px;
+            margin-bottom: 4px;
+            font-size: 11px;
+            border-left: 3px solid #ccc;
+        }
+        .popup-inspection-item.cond-good { border-left-color: #22c55e; }
+        .popup-inspection-item.cond-fair { border-left-color: #3b82f6; }
+        .popup-inspection-item.cond-poor { border-left-color: #f97316; }
+        .popup-inspection-item.cond-critical { border-left-color: #ef4444; }
+        .popup-inspection-meta { color: #888; font-size: 10px; }
+        .popup-inspection-findings { color: #333; margin-top: 2px; }
+        .popup-inspection-badge {
+            display: inline-block;
+            font-size: 10px;
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: white;
+        }
+        .popup-inspection-badge.good { background: #22c55e; }
+        .popup-inspection-badge.fair { background: #3b82f6; }
+        .popup-inspection-badge.poor { background: #f97316; }
+        .popup-inspection-badge.critical { background: #ef4444; }
+
+        /* ====== Sidebar Tabs ====== */
+        .sidebar-tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 2px solid #e5e7eb;
+            margin-bottom: 12px;
+        }
+        .sidebar-tab {
+            flex: 1;
+            padding: 8px 0;
+            border: none;
+            background: none;
+            font-size: 13px;
+            font-weight: 600;
+            color: #888;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.2s;
+            text-align: center;
+        }
+        .sidebar-tab:hover { color: #555; }
+        .sidebar-tab.active {
+            color: #2563eb;
+            border-bottom-color: #2563eb;
+        }
+        .sidebar-inspection-item {
+            background: white;
+            border-radius: 12px;
+            padding: 14px;
+            border-left: 4px solid #ccc;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 10px;
+        }
+        .sidebar-inspection-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+        .sidebar-inspection-item.cond-good { border-color: #22c55e; }
+        .sidebar-inspection-item.cond-fair { border-color: #3b82f6; }
+        .sidebar-inspection-item.cond-poor { border-color: #f97316; }
+        .sidebar-inspection-item.cond-critical { border-color: #ef4444; }
+        .sidebar-inspection-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        .sidebar-inspection-location { font-weight: 600; font-size: 13px; }
+        .sidebar-inspection-badge {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            color: white;
+        }
+        .sidebar-inspection-badge.good { background: #22c55e; }
+        .sidebar-inspection-badge.fair { background: #3b82f6; }
+        .sidebar-inspection-badge.poor { background: #f97316; }
+        .sidebar-inspection-badge.critical { background: #ef4444; }
+        .sidebar-inspection-meta { font-size: 12px; color: #666; margin-bottom: 4px; }
+        .sidebar-inspection-findings { font-size: 12px; color: #333; }
+
+        /* ====== Inspection Modal ====== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-overlay.open { display: flex; }
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            width: 420px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        }
+        .modal-title { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+        .modal-field { margin-bottom: 12px; }
+        .modal-label { font-size: 12px; font-weight: 600; color: #555; display: block; margin-bottom: 4px; }
+        .modal-input, .modal-select, .modal-textarea {
+            width: 100%;
+            border: 1.5px solid #d1d5db;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 13px;
+            font-family: inherit;
+            outline: none;
+        }
+        .modal-input:focus, .modal-select:focus, .modal-textarea:focus { border-color: #2563eb; }
+        .modal-textarea { resize: vertical; min-height: 60px; }
+        .modal-buttons { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; }
+        .modal-btn {
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+        }
+        .modal-btn.primary { background: #2563eb; color: white; }
+        .modal-btn.secondary { background: #f3f4f6; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="logo">Highway<span>Lens</span></div>
+        </div>
+        <div class="header-right">
+            <div class="header-info">
+                <span class="header-info-icon">📡</span>
+                <span id="observation-date">衛星観測日: 2026年1月26日〜2月7日</span>
+            </div>
+            <button class="agent-toggle" id="agent-toggle" onclick="toggleChatPanel()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="12" rx="3"/>
+                    <circle cx="9" cy="10" r="1.5" fill="currentColor" stroke="none"/>
+                    <circle cx="15" cy="10" r="1.5" fill="currentColor" stroke="none"/>
+                    <path d="M8 20l4-4 4 4"/>
+                </svg>
+                <span id="agent-label">AI Agent</span>
+            </button>
+            <button class="lang-toggle" id="lang-toggle" onclick="toggleLanguage()">
+                <span id="lang-label">EN</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="summary-section">
+                <div class="summary-title">📊 監視状況サマリー</div>
+                <div class="summary-cards">
+                    <div class="summary-card danger" onclick="filterByLevel('red')">
+                        <div class="summary-count" id="count-danger">-</div>
+                        <div class="summary-label">要対応</div>
+                        <div class="summary-action">緊急点検が必要</div>
+                    </div>
+                    <div class="summary-card warning" onclick="filterByLevel('orange')">
+                        <div class="summary-count" id="count-warning">-</div>
+                        <div class="summary-label">要注意</div>
+                        <div class="summary-action">現地確認を推奨</div>
+                    </div>
+                    <div class="summary-card caution" onclick="filterByLevel('yellow')">
+                        <div class="summary-count" id="count-caution">-</div>
+                        <div class="summary-label">経過観察</div>
+                        <div class="summary-action">監視継続</div>
+                    </div>
+                    <div class="summary-card safe" onclick="filterByLevel('green')">
+                        <div class="summary-count" id="count-safe">-</div>
+                        <div class="summary-label">異常なし</div>
+                        <div class="summary-action">通常監視</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert-section">
+                <div class="sidebar-tabs">
+                    <button class="sidebar-tab active" id="sidebar-tab-alerts" onclick="switchSidebarTab('alerts')">⚠️ 対応箇所</button>
+                    <button class="sidebar-tab" id="sidebar-tab-inspections" onclick="switchSidebarTab('inspections')">📋 点検記録</button>
+                </div>
+                <div id="tab-alerts">
+                    <div class="alert-header">
+                        <div class="alert-title">⚠️ 対応が必要な箇所</div>
+                        <div class="alert-count" id="alert-count">0</div>
+                    </div>
+                    <div class="route-filter">
+                        <button class="route-filter-btn active" id="filter-all" onclick="setRouteFilter('all')">すべて</button>
+                        <button class="route-filter-btn" id="filter-tomei" onclick="setRouteFilter('TOMEI')">東名</button>
+                        <button class="route-filter-btn shintomei" id="filter-shintomei" onclick="setRouteFilter('SHINTOMEI')">新東名</button>
+                    </div>
+                    <div class="alert-list" id="alert-list">
+                        <div class="loading">
+                            <div class="loading-spinner"></div>
+                            <div class="loading-text" id="loading-text">データを読み込み中...</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-inspections" style="display:none">
+                    <div id="sidebar-inspection-list">
+                        <div style="text-align:center;color:#999;padding:20px;font-size:13px;">読み込み中...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="data-info">
+                    データソース: Sentinel-1衛星 (ESA)<br>
+                    地形: 国土地理院DEM / 気象: 気象庁
+                </div>
+                <div class="update-time" id="update-time">最終確認: --</div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+
+            <div class="map-controls">
+            </div>
+
+            <div class="map-legend">
+                <div class="legend-title">凡例</div>
+                <div class="legend-item"><div class="legend-dot danger"></div><span>要対応</span></div>
+                <div class="legend-item"><div class="legend-dot warning"></div><span>要注意</span></div>
+                <div class="legend-item"><div class="legend-dot caution"></div><span>経過観察</span></div>
+                <div class="legend-item"><div class="legend-dot safe"></div><span>異常なし</span></div>
+                <div class="legend-item"><div class="legend-dot" style="background:#f97316;border:2px dashed #666;width:10px;height:10px;"></div><span>暫定評価</span></div>
+                <div style="border-top: 1px solid #eee; margin: 6px 0 4px;"></div>
+                <div class="legend-item"><div style="width:20px;height:3px;background:#3b82f6;border-radius:2px;flex-shrink:0;"></div><span id="legend-tomei">東名 (E1)</span></div>
+                <div class="legend-item"><div style="width:20px;height:3px;background:#8b5cf6;border-radius:2px;flex-shrink:0;"></div><span id="legend-shintomei">新東名 (E1A)</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat FAB removed — toggle is in the header -->
+
+    <!-- Chat Slide-out Panel -->
+    <div class="chat-panel" id="chat-panel">
+        <div class="chat-panel-header">
+            <div class="chat-panel-title" id="chat-title">AI Assistant</div>
+            <div style="display:flex;align-items:center;gap:8px;">
+                <div class="chat-model-switch" id="chat-model-switch">
+                    <button class="chat-model-btn active" data-model="fast" onclick="setChatModel('fast')">Flash</button>
+                    <button class="chat-model-btn" data-model="pro" onclick="setChatModel('pro')">Pro</button>
+                </div>
+                <button class="chat-close-btn" onclick="toggleChatPanel()">✕</button>
+            </div>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="chat-suggest" id="chat-suggest">
+                <div style="font-size:13px;color:#666;margin-bottom:4px;" id="chat-suggest-label">質問してみましょう:</div>
+                <button class="chat-suggest-btn" onclick="sendSuggestion(this.textContent)">赤レベルのセグメントをまとめて</button>
+                <button class="chat-suggest-btn" onclick="sendSuggestion(this.textContent)">新東名で最もリスクが高い箇所は？</button>
+                <button class="chat-suggest-btn" onclick="sendSuggestion(this.textContent)">全体の監視状況を教えて</button>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <textarea class="chat-input" id="chat-input" placeholder="メッセージを入力..." rows="1" onkeydown="if(event.key==='Enter'&&!event.shiftKey&&!chatBusy){event.preventDefault();sendChatMessage();}"></textarea>
+            <button class="chat-send-btn" id="chat-send" onclick="sendChatMessage()">送信</button>
+        </div>
+    </div>
+
+    <!-- Inspection Modal -->
+    <div class="modal-overlay" id="inspection-modal">
+        <div class="modal-content">
+            <div class="modal-title" id="modal-inspection-title">点検記録</div>
+            <input type="hidden" id="inspection-segment-id">
+            <div class="modal-field">
+                <label class="modal-label" id="label-inspector">点検者</label>
+                <input class="modal-input" id="inspection-inspector" type="text">
+            </div>
+            <div class="modal-field">
+                <label class="modal-label" id="label-date">点検日</label>
+                <input class="modal-input" id="inspection-date" type="date">
+            </div>
+            <div class="modal-field">
+                <label class="modal-label" id="label-weather">天候</label>
+                <input class="modal-input" id="inspection-weather" type="text">
+            </div>
+            <div class="modal-field">
+                <label class="modal-label" id="label-condition">状態</label>
+                <select class="modal-select" id="inspection-condition">
+                    <option value="good">良好 (Good)</option>
+                    <option value="fair">普通 (Fair)</option>
+                    <option value="poor">不良 (Poor)</option>
+                    <option value="critical">危険 (Critical)</option>
+                </select>
+            </div>
+            <div class="modal-field">
+                <label class="modal-label" id="label-findings">所見</label>
+                <textarea class="modal-textarea" id="inspection-findings"></textarea>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-btn secondary" onclick="closeInspectionModal()" id="btn-cancel">キャンセル</button>
+                <button class="modal-btn primary" onclick="submitInspection()" id="btn-submit-inspection">登録</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ============================================
+        // Translations
+        // ============================================
+        const translations = {
+            ja: {
+                observationDate: '衛星観測日: 2026年1月26日〜2月7日',
+                langLabel: 'EN',
+                summaryTitle: '📊 監視状況サマリー',
+                levelDanger: '要対応',
+                levelWarning: '要注意',
+                levelCaution: '経過観察',
+                levelSafe: '異常なし',
+                levelUnknown: '暫定評価',
+                actionDanger: '緊急点検が必要',
+                actionWarning: '現地確認を推奨',
+                actionCaution: '監視継続',
+                actionSafe: '通常監視',
+                alertTitle: '⚠️ 対応が必要な箇所',
+                filterAll: 'すべて',
+                filterTomei: '東名',
+                filterShintomei: '新東名',
+                loading: 'データを読み込み中...',
+                noAlerts: '現在、対応が必要な箇所はありません',
+                loadError: 'データの読み込みに失敗しました',
+                dataSource: 'データソース: Sentinel-1衛星 (ESA)<br>地形: 国土地理院DEM / 気象: 気象庁',
+                lastUpdate: '最終確認',
+                legendTitle: '凡例',
+                clickToView: 'クリックで地図表示',
+                coordinates: '座標',
+                insightsTitle: '📊 観測データからの分析',
+                popupActionDanger: '🚨 緊急点検を実施してください',
+                popupActionWarning: '👷 現地確認をお勧めします',
+                popupActionCaution: '👀 経過観察を継続してください',
+                popupActionSafe: '✓ 通常監視を継続',
+                popupActionUnknown: '📡 InSARデータを観測中です',
+                chatTitle: 'AI アシスタント',
+                chatPlaceholder: 'メッセージを入力...',
+                chatSend: '送信',
+                chatSuggestLabel: '質問してみましょう:',
+                chatThinking: '考え中...',
+                commentsTitle: 'コメント',
+                addComment: '追加',
+                commentPlaceholder: 'コメントを入力...',
+                inspectionBtn: '点検記録',
+                inspectionTitle: '点検記録',
+                inspectorLabel: '点検者',
+                dateLabel: '点検日',
+                weatherLabel: '天候',
+                conditionLabel: '状態',
+                findingsLabel: '所見',
+                cancelBtn: 'キャンセル',
+                submitBtn: '登録',
+                noComments: 'コメントなし',
+                inspectionHistory: '点検履歴',
+                noInspections: '点検記録なし',
+                alertsTab: '対応箇所',
+                inspectionTab: '点検記録',
+                conditionGood: '良好',
+                conditionFair: '普通',
+                conditionPoor: '不良',
+                conditionCritical: '危険'
+            },
+            en: {
+                observationDate: 'Observation: Jan 26 - Feb 7, 2026',
+                langLabel: 'JA',
+                summaryTitle: '📊 Monitoring Summary',
+                levelDanger: 'Critical',
+                levelWarning: 'Warning',
+                levelCaution: 'Caution',
+                levelSafe: 'Normal',
+                levelUnknown: 'Provisional',
+                actionDanger: 'Urgent inspection required',
+                actionWarning: 'On-site check recommended',
+                actionCaution: 'Continue monitoring',
+                actionSafe: 'Normal monitoring',
+                alertTitle: '⚠️ Action Required',
+                filterAll: 'All',
+                filterTomei: 'Tomei',
+                filterShintomei: 'Shin-Tomei',
+                loading: 'Loading data...',
+                noAlerts: 'No locations require action at this time',
+                loadError: 'Failed to load data',
+                dataSource: 'Data: Sentinel-1 Satellite (ESA)<br>Terrain: GSI DEM / Weather: JMA',
+                lastUpdate: 'Last updated',
+                legendTitle: 'Legend',
+                clickToView: 'Click to view on map',
+                coordinates: 'Coordinates',
+                insightsTitle: '📊 Data-Driven Analysis',
+                popupActionDanger: '🚨 Urgent inspection required',
+                popupActionWarning: '👷 On-site check recommended',
+                popupActionCaution: '👀 Continue monitoring',
+                popupActionSafe: '✓ Continue normal monitoring',
+                popupActionUnknown: '📡 Collecting InSAR observation data',
+                chatTitle: 'AI Assistant',
+                chatPlaceholder: 'Type a message...',
+                chatSend: 'Send',
+                chatSuggestLabel: 'Try asking:',
+                chatThinking: 'Thinking...',
+                commentsTitle: 'Comments',
+                addComment: 'Add',
+                commentPlaceholder: 'Add a comment...',
+                inspectionBtn: 'Inspection',
+                inspectionTitle: 'Inspection Record',
+                inspectorLabel: 'Inspector',
+                dateLabel: 'Date',
+                weatherLabel: 'Weather',
+                conditionLabel: 'Condition',
+                findingsLabel: 'Findings',
+                cancelBtn: 'Cancel',
+                submitBtn: 'Submit',
+                noComments: 'No comments',
+                inspectionHistory: 'Inspection History',
+                noInspections: 'No inspections',
+                alertsTab: 'Action Required',
+                inspectionTab: 'Inspections',
+                conditionGood: 'Good',
+                conditionFair: 'Fair',
+                conditionPoor: 'Poor',
+                conditionCritical: 'Critical'
+            }
+        };
+
+        let currentLang = localStorage.getItem('highwaylens-lang') || 'ja';
+
+        function t(key) {
+            return translations[currentLang][key] || key;
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ja' ? 'en' : 'ja';
+            localStorage.setItem('highwaylens-lang', currentLang);
+            updateUILanguage();
+            updateAlertList();
+        }
+
+        function updateUILanguage() {
+            // Header
+            document.getElementById('observation-date').textContent = t('observationDate');
+            document.getElementById('lang-label').textContent = t('langLabel');
+
+            // Summary section
+            document.querySelector('.summary-title').textContent = t('summaryTitle');
+            const cards = document.querySelectorAll('.summary-card');
+            const labels = ['levelDanger', 'levelWarning', 'levelCaution', 'levelSafe'];
+            const actions = ['actionDanger', 'actionWarning', 'actionCaution', 'actionSafe'];
+            cards.forEach((card, i) => {
+                card.querySelector('.summary-label').textContent = t(labels[i]);
+                card.querySelector('.summary-action').textContent = t(actions[i]);
+            });
+
+            // Alert section
+            document.querySelector('.alert-title').textContent = t('alertTitle');
+            document.getElementById('filter-all').textContent = t('filterAll');
+            document.getElementById('filter-tomei').textContent = t('filterTomei');
+            document.getElementById('filter-shintomei').textContent = t('filterShintomei');
+
+            // Sidebar footer
+            document.querySelector('.data-info').innerHTML = t('dataSource');
+
+            // Legend
+            document.querySelector('.legend-title').textContent = t('legendTitle');
+            const legendItems = document.querySelectorAll('.legend-item span');
+            const legendLabels = ['levelDanger', 'levelWarning', 'levelCaution', 'levelSafe', 'levelUnknown'];
+            legendItems.forEach((item, i) => {
+                item.textContent = t(legendLabels[i]);
+            });
+
+            // Loading text (if visible)
+            const loadingText = document.getElementById('loading-text');
+            if (loadingText) {
+                loadingText.textContent = t('loading');
+            }
+
+            // Refresh markers with new language
+            if (allSegments.length > 0) {
+                refreshMarkers();
+            }
+        }
+
+        function refreshMarkers() {
+            // Close all open popups first
+            map.closePopup();
+            // Remove all existing markers
+            markers.forEach(m => map.removeLayer(m));
+            markers = [];
+            // Create new markers with current language
+            allSegments.forEach(segment => {
+                const marker = createMarker(segment);
+                marker.addTo(map);
+                markers.push(marker);
+            });
+        }
+
+        // Initialize map — constrained to Tomei/Shin-Tomei corridor
+        const corridorBounds = L.latLngBounds(
+            [34.55, 137.30],  // SW corner (Hamamatsu west + margin)
+            [35.55, 139.55]   // NE corner (Kanagawa east + margin)
+        );
+        const map = L.map('map', {
+            maxBounds: corridorBounds.pad(0.15),  // allow slight overscroll
+            maxBoundsViscosity: 0.8,               // elastic snap-back
+            minZoom: 9,
+            maxZoom: 18,
+        }).fitBounds(corridorBounds);
+
+        // Base layers
+        const baseLayers = {
+            'Satellite': L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                attribution: '&copy; Esri',
+                maxZoom: 18,
+            }),
+            'Street': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap',
+                maxZoom: 18,
+            })
+        };
+        baseLayers['Satellite'].addTo(map);
+        L.control.layers(baseLayers, null, { position: 'topright' }).addTo(map);
+        L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
+
+        let markers = [];
+        let allSegments = [];
+        let routeLayers = [];
+        let currentRouteFilter = 'all';
+
+        function setRouteFilter(filter) {
+            currentRouteFilter = filter;
+            document.querySelectorAll('.route-filter-btn').forEach(btn => btn.classList.remove('active'));
+            if (filter === 'all') document.getElementById('filter-all').classList.add('active');
+            else if (filter === 'TOMEI') document.getElementById('filter-tomei').classList.add('active');
+            else if (filter === 'SHINTOMEI') document.getElementById('filter-shintomei').classList.add('active');
+
+            // Filter map markers
+            markers.forEach(m => map.removeLayer(m));
+            markers = [];
+            const filtered = filter === 'all'
+                ? allSegments
+                : allSegments.filter(s => s.segment_id.startsWith(filter));
+            filtered.forEach(segment => {
+                const marker = createMarker(segment);
+                marker.addTo(map);
+                markers.push(marker);
+            });
+
+            // Filter route lines
+            routeLayers.forEach(layer => {
+                if (filter === 'all') {
+                    layer.addTo(map);
+                } else {
+                    const match = (filter === 'TOMEI' && layer._routeKey === 'tomei') ||
+                                  (filter === 'SHINTOMEI' && layer._routeKey === 'shintomei');
+                    match ? layer.addTo(map) : map.removeLayer(layer);
+                }
+            });
+
+            // Fit map to visible markers
+            if (filtered.length > 0) {
+                const bounds = L.latLngBounds(filtered.map(s => [s.lat, s.lon]));
+                map.fitBounds(bounds, { padding: [50, 50], maxZoom: 15 });
+            }
+
+            updateAlertList();
+        }
+
+        function getLevelConfig() {
+            return {
+                red: { color: '#ef4444', label: t('levelDanger'), class: 'danger' },
+                orange: { color: '#f97316', label: t('levelWarning'), class: 'warning' },
+                yellow: { color: '#eab308', label: t('levelCaution'), class: 'caution' },
+                green: { color: '#22c55e', label: t('levelSafe'), class: 'safe' },
+                unknown: { color: '#9ca3af', label: t('levelUnknown'), class: 'unknown' }
+            };
+        }
+
+        function getActionText(level) {
+            switch(level) {
+                case 'red': return t('popupActionDanger');
+                case 'orange': return t('popupActionWarning');
+                case 'yellow': return t('popupActionCaution');
+                case 'unknown': return t('popupActionUnknown');
+                default: return t('popupActionSafe');
+            }
+        }
+
+        function formatSegmentName(segmentId) {
+            // Convert segment IDs to readable names
+            if (segmentId.startsWith('SHINTOMEI_')) {
+                const num = segmentId.replace('SHINTOMEI_', '');
+                return currentLang === 'en'
+                    ? `Shin-Tomei Slope #${parseInt(num)}`
+                    : `新東名 のり面 #${parseInt(num)}`;
+            } else if (segmentId.startsWith('TOMEI_')) {
+                const num = segmentId.replace('TOMEI_', '');
+                return currentLang === 'en'
+                    ? `Tomei Point #${parseInt(num)}`
+                    : `東名 監視ポイント #${parseInt(num)}`;
+            }
+            return segmentId;
+        }
+
+        function parseMessage(message) {
+            // Remove source tag for display
+            const cleanMessage = message.replace(/\s*\[.*?\]/, '');
+            const parts = cleanMessage.split('|').map(p => p.trim());
+            const mainStatus = parts[0] || '';
+
+            // Simplify for non-experts
+            if (currentLang === 'en') {
+                if (cleanMessage.includes('変動速度大') || cleanMessage.includes('変動が加速') || cleanMessage.includes('顕著な変動')) {
+                    return 'Significant ground movement detected';
+                } else if (cleanMessage.includes('変動を検出') || cleanMessage.includes('変動あり')) {
+                    return 'Ground movement detected';
+                } else if (cleanMessage.includes('急傾斜') || cleanMessage.includes('急斜面')) {
+                    return 'Steep slope area';
+                } else if (cleanMessage.includes('大雨') || cleanMessage.includes('多量の降雨')) {
+                    return 'Heavy rainfall - attention required';
+                } else if (cleanMessage.includes('降雨')) {
+                    return 'Recent rainfall recorded';
+                } else if (cleanMessage.includes('災害履歴') || cleanMessage.includes('履歴あり')) {
+                    return 'Past disaster history in area';
+                } else if (cleanMessage.includes('SAR未取得')) {
+                    return 'Provisional assessment (no SAR data)';
+                } else if (cleanMessage.includes('安定') || cleanMessage.includes('異常なし')) {
+                    return 'Conditions stable';
+                } else if (cleanMessage.includes('経過観察')) {
+                    return 'Under observation';
+                } else if (cleanMessage.includes('要注意')) {
+                    return 'Attention required';
+                } else if (cleanMessage.includes('要対応') || cleanMessage.includes('緊急')) {
+                    return 'Urgent action required';
+                }
+                return 'Monitoring in progress';
+            } else {
+                if (cleanMessage.includes('変動速度大') || cleanMessage.includes('変動が加速')) {
+                    return '地盤の動きが検出されています';
+                } else if (cleanMessage.includes('急傾斜')) {
+                    return '傾斜が急な箇所です';
+                } else if (cleanMessage.includes('大雨')) {
+                    return '降雨の影響に注意が必要です';
+                } else if (cleanMessage.includes('SAR未取得')) {
+                    return 'SAR未取得・他データで暫定評価中';
+                } else if (cleanMessage.includes('安定') || cleanMessage.includes('異常なし')) {
+                    return '安定した状態です';
+                }
+                return mainStatus.replace(/【.*?】/, '').trim() || '監視中';
+            }
+        }
+
+        // Insight translation - exact matches from API
+        function translateInsightLabel(label) {
+            const map = {
+                '衛星観測': 'Satellite',
+                '地形': 'Terrain',
+                '気象': 'Weather',
+                '地質': 'Geology',
+                '履歴': 'History',
+                '法面構造': 'Slope Structure',
+                '区間': 'Section',
+                '方向': 'Direction',
+                'キロポスト': 'Kilometer Post'
+            };
+            return map[label] || label;
+        }
+
+        function translateInsightValue(value) {
+            const exactMap = {
+                // Satellite observation
+                '大きな地盤変動を検出': 'Significant ground movement detected',
+                '地盤変動を検出': 'Ground movement detected',
+                '地盤は安定': 'Ground is stable',
+                '観測データ取得中': 'Collecting observation data',
+                'SAR データ未取得': 'SAR data unavailable',
+                // Norimen structure (slope tiers)
+                // Pattern: Nの法面 -> N-tier slope
+                // Terrain
+                '急傾斜地': 'Steep slope',
+                'やや急な傾斜': 'Moderately steep slope',
+                '緩やかな傾斜': 'Gentle slope',
+                // Weather
+                '大雨の影響あり': 'Heavy rain impact',
+                '降雨の影響あり': 'Rainfall impact',
+                '乾燥状態': 'Dry conditions',
+                // Geology
+                '花崗岩（安定）': 'Granite (stable)',
+                '安山岩（安定）': 'Andesite (stable)',
+                '玄武岩（安定）': 'Basite (stable)',
+                '砂岩（やや注意）': 'Sandstone (caution)',
+                '泥岩（要注意）': 'Mudstone (attention needed)',
+                '火山灰（要注意）': 'Volcanic ash (attention needed)',
+                '沖積層（普通）': 'Alluvial (normal)',
+                '上下線共有': 'Both directions',
+                '上り線': 'Upbound',
+                '下り線': 'Downbound'
+            };
+
+            // Exact match
+            if (exactMap[value]) {
+                return exactMap[value];
+            }
+
+            // Historical events pattern: 過去にN件の災害記録
+            const historyMatch = value.match(/過去に(\d+)件の災害記録/);
+            if (historyMatch) {
+                return `${historyMatch[1]} past disaster record(s)`;
+            }
+
+            // Norimen tier pattern: N段の法面
+            const tierMatch = value.match(/(\d+)段の法面/);
+            if (tierMatch) {
+                return `${tierMatch[1]}-tier slope`;
+            }
+
+            // IC section pattern: IC名 → IC名
+            if (value.includes('→')) {
+                return value;  // Keep as-is (IC names)
+            }
+
+            return value;
+        }
+
+        function translateInsightDetail(detail) {
+            if (!detail) return '';
+
+            const exactMap = {
+                '有意な変動なし': 'No significant movement',
+                '降雨の影響なし': 'No rainfall impact',
+                '地質調査データより': 'From geological survey data',
+                'NEXCO管理データより': 'From NEXCO management data',
+                '地形・気象・地質・履歴による暫定評価': 'Provisional assessment from terrain, weather, geology & history',
+                'InSARデータを収集中です': 'Collecting InSAR data'
+            };
+
+            if (exactMap[detail]) {
+                return exactMap[detail];
+            }
+
+            let result = detail;
+
+            // Norimen length pattern: 延長 Nm
+            result = result.replace(/延長\s*([\d.]+)m/g, 'Length: $1m');
+
+            // Pattern: 年間 Nmm の動き
+            result = result.replace(/年間\s*([\d.]+)mm\s*の動き/g, '$1mm movement per year');
+
+            // Pattern: 傾斜角 N°
+            result = result.replace(/傾斜角\s*([\d.]+)°/g, 'Slope angle: $1°');
+
+            // Pattern: 48時間で Nmm
+            result = result.replace(/48時間で\s*([\d.]+)mm/g, '$1mm in 48 hours');
+
+            // Pattern: 最寄り N.Nkm
+            result = result.replace(/最寄り\s*([\d.]+)km/g, 'Nearest: $1km');
+
+            return result;
+        }
+
+        function fitPopupToMap(popup) {
+            if (!popup._container) return;
+            const mapH = map.getContainer().clientHeight;
+            const maxH = mapH - 100;
+            const contentNode = popup._contentNode;
+            if (contentNode) {
+                contentNode.style.maxHeight = maxH + 'px';
+                contentNode.style.overflowY = 'auto';
+            }
+            popup.update();
+        }
+
+        function createMarker(segment) {
+            const levelConfig = getLevelConfig();
+            const config = levelConfig[segment.level] || levelConfig.unknown;
+
+            const isProvisional = segment.is_reliable === false;
+            const borderStyle = isProvisional ? '3px dashed white' : '3px solid white';
+            const opacity = isProvisional ? '0.75' : '1';
+            const icon = L.divIcon({
+                className: 'custom-marker',
+                html: `<div style="
+                    width: 20px;
+                    height: 20px;
+                    background: ${config.color};
+                    border-radius: 50%;
+                    border: ${borderStyle};
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+                    opacity: ${opacity};
+                "></div>`,
+                iconSize: [20, 20],
+                iconAnchor: [10, 10]
+            });
+
+            const simpleMessage = parseMessage(segment.message);
+
+            // Build insights HTML
+            let insightsHtml = '';
+            if (segment.insights && segment.insights.length > 0) {
+                insightsHtml = `
+                    <div class="popup-insights">
+                        <div class="popup-insights-title">${t('insightsTitle')}</div>
+                        ${segment.insights.map(insight => {
+                            // Translate insight labels if English
+                            const label = currentLang === 'en' ? translateInsightLabel(insight.label) : insight.label;
+                            const value = currentLang === 'en' ? translateInsightValue(insight.value) : insight.value;
+                            const detail = insight.detail ? (currentLang === 'en' ? translateInsightDetail(insight.detail) : insight.detail) : '';
+                            return `
+                            <div class="insight-item ${insight.severity}">
+                                <div class="insight-icon">${insight.icon}</div>
+                                <div class="insight-content">
+                                    <div class="insight-label">${label}</div>
+                                    <div class="insight-value">${value}</div>
+                                    ${detail ? `<div class="insight-detail">${detail}</div>` : ''}
+                                </div>
+                            </div>
+                        `}).join('')}
+                    </div>
+                `;
+            }
+
+            const sid = segment.segment_id;
+            const provisionalBadge = segment.is_reliable === false
+                ? `<span style="display:inline-block;font-size:10px;background:#fef3c7;color:#92400e;padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;">${currentLang === 'en' ? 'Provisional' : '暫定'}</span>`
+                : '';
+
+            const popup = `
+                <div class="popup-content" data-segment-id="${sid}">
+                    <div class="popup-header">
+                        <div class="popup-title">${formatSegmentName(sid)}${provisionalBadge}</div>
+                        <div class="popup-score ${config.class}">${config.label}</div>
+                    </div>
+                    <div class="popup-status">
+                        <strong>${getActionText(segment.level)}</strong>
+                    </div>
+                    ${insightsHtml}
+                    <div class="popup-details" style="margin-top: 12px; padding-top: 8px; border-top: 1px solid #eee;">
+                        <div class="popup-detail-row"><span>${t('coordinates')}</span><span>${segment.lat.toFixed(4)}, ${segment.lon.toFixed(4)}</span></div>
+                    </div>
+                    <div class="popup-actions-bar">
+                        <button class="popup-action-btn" onclick="openInspectionModal('${sid}')">📋 ${t('inspectionBtn')}</button>
+                        <button class="popup-action-btn" onclick="toggleChatPanel(); sendSuggestion('${sid}の状況を教えて')">💬 AI</button>
+                    </div>
+                    <div class="popup-inspections-section">
+                        <div class="popup-inspections-title">📋 ${t('inspectionHistory')}</div>
+                        <div id="inspections-${sid}" class="popup-inspections-list"><span style="font-size:11px;color:#999;">${t('noInspections')}</span></div>
+                    </div>
+                </div>
+            `;
+
+            const marker = L.marker([segment.lat, segment.lon], { icon }).bindPopup(popup, {
+                autoClose: true,
+                closeOnClick: false,
+                maxWidth: 350,
+                autoPan: true,
+                autoPanPadding: [40, 40]
+            });
+            marker.on('popupopen', function(e) {
+                fitPopupToMap(e.popup);
+                loadInspections(sid).then(() => fitPopupToMap(e.popup));
+            });
+            marker._segmentId = sid;
+            return marker;
+        }
+
+        function filterByLevel(level) {
+            markers.forEach(m => map.removeLayer(m));
+            markers = [];
+
+            const filtered = level ? allSegments.filter(s => s.level === level) : allSegments;
+            filtered.forEach(segment => {
+                const marker = createMarker(segment);
+                marker.addTo(map);
+                markers.push(marker);
+            });
+
+            if (filtered.length > 0) {
+                const bounds = L.latLngBounds(filtered.map(s => [s.lat, s.lon]));
+                map.fitBounds(bounds, { padding: [50, 50], maxZoom: 15 });
+            }
+        }
+
+        async function fetchData() {
+            try {
+                const [segmentsRes, statsRes] = await Promise.all([
+                    fetch('/api/v1/segments'),
+                    fetch('/api/v1/stats')
+                ]);
+
+                const segments = await segmentsRes.json();
+                const stats = await statsRes.json();
+                allSegments = segments;
+
+                // Update counts
+                document.getElementById('count-danger').textContent = stats.segments_by_level?.red || 0;
+                document.getElementById('count-warning').textContent = stats.segments_by_level?.orange || 0;
+                document.getElementById('count-caution').textContent = stats.segments_by_level?.yellow || 0;
+                document.getElementById('count-safe').textContent = stats.segments_by_level?.green || 0;
+
+                // Clear and add markers
+                markers.forEach(m => map.removeLayer(m));
+                markers = [];
+                segments.forEach(segment => {
+                    const marker = createMarker(segment);
+                    marker.addTo(map);
+                    markers.push(marker);
+                });
+
+                // Update alerts
+                updateAlertList();
+
+                // Fetch and draw expressway routes (once)
+                if (routeLayers.length === 0) {
+                    try {
+                        const routesRes = await fetch('/api/v1/routes');
+                        const routes = await routesRes.json();
+
+                        const routeStyles = {
+                            tomei:     { color: '#3b82f6', label: '東名 (E1)',  labelEn: 'Tomei (E1)' },
+                            shintomei: { color: '#8b5cf6', label: '新東名 (E1A)', labelEn: 'Shin-Tomei (E1A)' }
+                        };
+
+                        for (const [key, route] of Object.entries(routes)) {
+                            const style = routeStyles[key] || { color: '#6b7280', label: key, labelEn: key };
+                            const line = L.polyline(route.coordinates, {
+                                color: style.color,
+                                weight: 3,
+                                opacity: 0.8
+                            }).addTo(map);
+                            line._routeKey = key;
+                            line._style = style;
+                            routeLayers.push(line);
+                        }
+                    } catch (e) {
+                        console.warn('Could not load routes:', e);
+                    }
+                }
+
+                document.getElementById('update-time').textContent =
+                    t('lastUpdate') + ': ' + new Date().toLocaleString(currentLang === 'ja' ? 'ja-JP' : 'en-US');
+
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('alert-list').innerHTML = `
+                    <div class="no-alerts">
+                        <div class="no-alerts-icon">⚠️</div>
+                        <div class="no-alerts-text">${t('loadError')}</div>
+                    </div>
+                `;
+            }
+        }
+
+        function updateAlertList() {
+            let filtered = allSegments;
+            if (currentRouteFilter !== 'all') {
+                filtered = filtered.filter(s => s.segment_id.startsWith(currentRouteFilter));
+            }
+            const alerts = filtered
+                .filter(s => ['red', 'orange', 'yellow'].includes(s.level))
+                .sort((a, b) => b.score - a.score);
+
+            document.getElementById('alert-count').textContent = alerts.length;
+
+            const alertList = document.getElementById('alert-list');
+            const levelConfig = getLevelConfig();
+
+            if (alerts.length === 0) {
+                alertList.innerHTML = `
+                    <div class="no-alerts">
+                        <div class="no-alerts-icon">✅</div>
+                        <div class="no-alerts-text">${t('noAlerts')}</div>
+                    </div>
+                `;
+            } else {
+                alertList.innerHTML = alerts.map(alert => {
+                    const config = levelConfig[alert.level];
+                    const simpleMessage = parseMessage(alert.message);
+                    return `
+                        <div class="alert-item ${config.class}" onclick="map.setView([${alert.lat}, ${alert.lon}], 17); setTimeout(() => markers.find(m => m.getLatLng().lat.toFixed(4) === '${alert.lat.toFixed(4)}')?.openPopup(), 300);">
+                            <div class="alert-top">
+                                <div class="alert-location">📍 ${formatSegmentName(alert.segment_id)}</div>
+                                <div class="alert-badge">${config.label}</div>
+                            </div>
+                            <div class="alert-status">${simpleMessage}</div>
+                            <div class="alert-action">
+                                <span class="alert-action-icon">→</span>
+                                ${t('clickToView')}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+        }
+
+        // ============================================
+        // Chat Panel
+        // ============================================
+        let chatSessionId = null;
+        let chatOpen = false;
+        let chatBusy = false;
+        let chatModel = 'fast';
+
+        function setChatModel(model) {
+            chatModel = model;
+            document.querySelectorAll('.chat-model-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.model === model);
+            });
+        }
+
+        function toggleChatPanel() {
+            chatOpen = !chatOpen;
+            document.getElementById('chat-panel').classList.toggle('open', chatOpen);
+            document.getElementById('agent-toggle').classList.toggle('active', chatOpen);
+            if (chatOpen) {
+                setTimeout(() => document.getElementById('chat-input').focus(), 350);
+            }
+        }
+
+        function setChatBusy(busy) {
+            chatBusy = busy;
+            const input = document.getElementById('chat-input');
+            const sendBtn = document.getElementById('chat-send');
+            const suggestBtns = document.querySelectorAll('.chat-suggest-btn');
+            input.disabled = busy;
+            sendBtn.disabled = busy;
+            suggestBtns.forEach(b => { b.disabled = busy; b.style.opacity = busy ? '0.5' : '1'; b.style.pointerEvents = busy ? 'none' : 'auto'; });
+            if (!busy) input.focus();
+        }
+
+        function sendSuggestion(text) {
+            if (chatBusy) return;
+            document.getElementById('chat-input').value = text;
+            sendChatMessage();
+        }
+
+        async function sendChatMessage() {
+            if (chatBusy) return;
+            const input = document.getElementById('chat-input');
+            const msg = input.value.trim();
+            if (!msg) return;
+            input.value = '';
+            autoResizeInput();
+
+            // Hide suggestions
+            const suggest = document.getElementById('chat-suggest');
+            if (suggest) suggest.style.display = 'none';
+
+            // Lock UI
+            setChatBusy(true);
+
+            // Show user message
+            appendChatMsg('user', msg);
+
+            // Show animated typing indicator
+            const thinkingId = appendChatMsg('thinking', '');
+
+            try {
+                const res = await fetch('/api/v1/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: msg, session_id: chatSessionId, model: chatModel })
+                });
+                if (!res.ok) {
+                    const errText = await res.text();
+                    throw new Error(`${res.status}: ${errText.slice(0, 100)}`);
+                }
+                const data = await res.json();
+                chatSessionId = data.session_id;
+
+                // Remove thinking, show reply
+                removeChatMsg(thinkingId);
+                appendChatMsg('assistant', data.reply, data.segment_ids);
+            } catch (e) {
+                removeChatMsg(thinkingId);
+                appendChatMsg('assistant', 'Error: ' + e.message);
+            }
+
+            // Unlock UI
+            setChatBusy(false);
+        }
+
+        let chatMsgCounter = 0;
+        function appendChatMsg(role, text, segmentIds) {
+            const container = document.getElementById('chat-messages');
+            const div = document.createElement('div');
+            const id = 'chat-msg-' + (++chatMsgCounter);
+            div.id = id;
+            div.className = `chat-msg ${role} appear`;
+
+            if (role === 'thinking') {
+                div.innerHTML = `<div class="chat-typing-dots"><span></span><span></span><span></span></div>`;
+            } else if (role === 'assistant') {
+                div.innerHTML = formatChatResponse(text);
+            } else {
+                div.textContent = text;
+            }
+
+            container.appendChild(div);
+            // Smooth scroll to bottom
+            container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+            return id;
+        }
+
+        function removeChatMsg(id) {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        }
+
+        function formatChatResponse(text) {
+            // Markdown links [title](url)
+            let html = text.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g,
+                '<a href="$2" target="_blank" rel="noopener" style="color:#2563eb;text-decoration:underline;">$1</a>');
+            // Markdown-style bold
+            html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            // Markdown lists
+            html = html.replace(/^\*\s+/gm, '&bull; ');
+            // Segment IDs → clickable links
+            html = html.replace(/((?:SHINTOMEI|TOMEI)_\d{4})/g,
+                '<span class="seg-link" onclick="focusSegment(\'$1\')">$1</span>');
+            html = html.replace(/\n/g, '<br>');
+            return html;
+        }
+
+        function focusSegment(segmentId) {
+            const seg = allSegments.find(s => s.segment_id === segmentId);
+            if (seg) {
+                const targetZoom = Math.max(map.getZoom(), 15);
+                map.setView([seg.lat, seg.lon], targetZoom, { animate: true });
+                setTimeout(() => {
+                    const m = markers.find(mk => mk._segmentId === segmentId);
+                    if (m) m.openPopup();
+                }, 400);
+            }
+        }
+
+        // Auto-resize textarea
+        function autoResizeInput() {
+            const el = document.getElementById('chat-input');
+            el.style.height = 'auto';
+            el.style.height = Math.min(el.scrollHeight, 100) + 'px';
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatInput = document.getElementById('chat-input');
+            chatInput.addEventListener('input', autoResizeInput);
+        });
+
+        // ============================================
+        // Popup Inspection History
+        // ============================================
+        function getConditionLabel(condition) {
+            const map = { good: 'conditionGood', fair: 'conditionFair', poor: 'conditionPoor', critical: 'conditionCritical' };
+            return t(map[condition] || condition);
+        }
+
+        async function loadInspections(segmentId) {
+            try {
+                const res = await fetch(`/api/v1/inspections?segment_id=${segmentId}`);
+                const inspections = await res.json();
+                const container = document.getElementById(`inspections-${segmentId}`);
+                if (!container) return;
+                if (inspections.length === 0) {
+                    container.innerHTML = `<span style="font-size:11px;color:#999;">${t('noInspections')}</span>`;
+                } else {
+                    container.innerHTML = inspections.map(ins => `
+                        <div class="popup-inspection-item cond-${ins.condition}">
+                            <div class="popup-inspection-meta">
+                                ${ins.date} | ${ins.inspector || 'N/A'} | ${ins.weather || ''}
+                                <span class="popup-inspection-badge ${ins.condition}">${getConditionLabel(ins.condition)}</span>
+                            </div>
+                            ${ins.findings ? `<div class="popup-inspection-findings">${ins.findings}</div>` : ''}
+                        </div>
+                    `).join('');
+                }
+            } catch (e) {
+                console.warn('Failed to load inspections:', e);
+            }
+        }
+
+        // ============================================
+        // Inspection Modal
+        // ============================================
+        function openInspectionModal(segmentId) {
+            document.getElementById('inspection-segment-id').value = segmentId;
+            document.getElementById('inspection-date').value = new Date().toISOString().slice(0, 10);
+            document.getElementById('inspection-inspector').value = '';
+            document.getElementById('inspection-weather').value = '';
+            document.getElementById('inspection-condition').value = 'good';
+            document.getElementById('inspection-findings').value = '';
+            document.getElementById('inspection-modal').classList.add('open');
+
+            // Update modal labels for current language
+            document.getElementById('modal-inspection-title').textContent = t('inspectionTitle');
+            document.getElementById('label-inspector').textContent = t('inspectorLabel');
+            document.getElementById('label-date').textContent = t('dateLabel');
+            document.getElementById('label-weather').textContent = t('weatherLabel');
+            document.getElementById('label-condition').textContent = t('conditionLabel');
+            document.getElementById('label-findings').textContent = t('findingsLabel');
+            document.getElementById('btn-cancel').textContent = t('cancelBtn');
+            document.getElementById('btn-submit-inspection').textContent = t('submitBtn');
+        }
+
+        function closeInspectionModal() {
+            document.getElementById('inspection-modal').classList.remove('open');
+        }
+
+        async function submitInspection() {
+            const segmentId = document.getElementById('inspection-segment-id').value;
+            const body = {
+                segment_id: segmentId,
+                inspector: document.getElementById('inspection-inspector').value,
+                date: document.getElementById('inspection-date').value,
+                weather: document.getElementById('inspection-weather').value,
+                condition: document.getElementById('inspection-condition').value,
+                findings: document.getElementById('inspection-findings').value,
+            };
+
+            try {
+                await fetch('/api/v1/inspections', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(body)
+                });
+                closeInspectionModal();
+                loadInspections(segmentId);
+                loadAllInspections();
+            } catch (e) {
+                console.warn('Failed to submit inspection:', e);
+            }
+        }
+
+        // ============================================
+        // Sidebar Tab Switching & All Inspections
+        // ============================================
+        function switchSidebarTab(tab) {
+            document.getElementById('tab-alerts').style.display = tab === 'alerts' ? '' : 'none';
+            document.getElementById('tab-inspections').style.display = tab === 'inspections' ? '' : 'none';
+            document.getElementById('sidebar-tab-alerts').classList.toggle('active', tab === 'alerts');
+            document.getElementById('sidebar-tab-inspections').classList.toggle('active', tab === 'inspections');
+            if (tab === 'inspections') {
+                loadAllInspections();
+            }
+        }
+
+        async function loadAllInspections() {
+            try {
+                const res = await fetch('/api/v1/inspections/all?limit=50');
+                const inspections = await res.json();
+                const container = document.getElementById('sidebar-inspection-list');
+                if (inspections.length === 0) {
+                    container.innerHTML = `<div style="text-align:center;color:#999;padding:20px;font-size:13px;">${t('noInspections')}</div>`;
+                    return;
+                }
+                container.innerHTML = inspections.map(ins => {
+                    const seg = allSegments.find(s => s.segment_id === ins.segment_id);
+                    const clickHandler = seg
+                        ? `map.setView([${seg.lat}, ${seg.lon}], 17); setTimeout(() => markers.find(m => m.getLatLng().lat.toFixed(4) === '${seg.lat.toFixed(4)}')?.openPopup(), 300);`
+                        : '';
+                    return `
+                        <div class="sidebar-inspection-item cond-${ins.condition}" ${clickHandler ? `onclick="${clickHandler}"` : ''}>
+                            <div class="sidebar-inspection-top">
+                                <div class="sidebar-inspection-location">📍 ${formatSegmentName(ins.segment_id)}</div>
+                                <span class="sidebar-inspection-badge ${ins.condition}">${getConditionLabel(ins.condition)}</span>
+                            </div>
+                            <div class="sidebar-inspection-meta">${ins.date} | ${ins.inspector || 'N/A'} | ${ins.weather || ''}</div>
+                            ${ins.findings ? `<div class="sidebar-inspection-findings">${ins.findings}</div>` : ''}
+                        </div>
+                    `;
+                }).join('');
+            } catch (e) {
+                console.warn('Failed to load all inspections:', e);
+            }
+        }
+
+        // ============================================
+        // Chat panel language updates
+        // ============================================
+        function updateChatLanguage() {
+            document.getElementById('chat-title').textContent = t('chatTitle');
+            document.getElementById('chat-input').placeholder = t('chatPlaceholder');
+            document.getElementById('chat-send').textContent = t('chatSend');
+            const suggestLabel = document.getElementById('chat-suggest-label');
+            if (suggestLabel) suggestLabel.textContent = t('chatSuggestLabel');
+        }
+
+        // Patch updateUILanguage to also update chat + sidebar tabs
+        const _origUpdateUILanguage = updateUILanguage;
+        updateUILanguage = function() {
+            _origUpdateUILanguage();
+            updateChatLanguage();
+            document.getElementById('sidebar-tab-alerts').textContent = '⚠️ ' + t('alertsTab');
+            document.getElementById('sidebar-tab-inspections').textContent = '📋 ' + t('inspectionTab');
+        };
+
+        // Initial fetch
+        fetchData();
+
+        // Apply initial language on load
+        updateUILanguage();
+
+        // Auto-refresh every 60 seconds
+        setInterval(fetchData, 60000);
+    </script>
+</body>
+</html>

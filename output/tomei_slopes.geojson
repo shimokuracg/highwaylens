@@ -1,0 +1,1753 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3035469727801,
+          35.41015214035144
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0087",
+        "score": 62,
+        "level": "orange",
+        "message": "【警戒】現地点検を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (-152.4 mm/年) | ⚠ 変動が加速中 [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.714554488658905,
+        "timestamp": "2026-02-13T03:56:37.046305",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.27420868252807,
+          35.38426416885974
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0086",
+        "score": 61,
+        "level": "orange",
+        "message": "【警戒】現地点検を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (-152.4 mm/年) | ⚠ 変動が加速中 [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.714554488658905,
+        "timestamp": "2026-02-13T03:56:37.046226",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3120074074239,
+          35.412143563428586
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0088",
+        "score": 61,
+        "level": "orange",
+        "message": "【警戒】現地点検を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (-152.4 mm/年) | ⚠ 変動が加速中 [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.714554488658905,
+        "timestamp": "2026-02-13T03:56:37.046383",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.55940831585463,
+          35.56463045517669
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0091",
+        "score": 60,
+        "level": "orange",
+        "message": "【警戒】現地点検を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (-158.0 mm/年) | ⚠ 変動が加速中 [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.44101831316947937,
+        "timestamp": "2026-02-13T03:56:37.046609",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.58589785511444,
+          35.60885370831391
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0092",
+        "score": 60,
+        "level": "orange",
+        "message": "【警戒】現地点検を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (-62.0 mm/年) | ⚠ 変動が加速中 [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.531927227973938,
+        "timestamp": "2026-02-13T03:56:37.046683",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49085996834916,
+          35.51409897817584
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0089",
+        "score": 59,
+        "level": "orange",
+        "message": "【警戒】現地点検を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (-63.2 mm/年) | ⚠ 変動が加速中 [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.766119658946991,
+        "timestamp": "2026-02-13T03:56:37.046459",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5004605749259,
+          35.51842956704907
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0090",
+        "score": 59,
+        "level": "orange",
+        "message": "【警戒】現地点検を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (-63.2 mm/年) | ⚠ 変動が加速中 [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.766119658946991,
+        "timestamp": "2026-02-13T03:56:37.046535",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.90525925155563,
+          35.2153548084886
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0044",
+        "score": 49,
+        "level": "yellow",
+        "message": "【注意】監視強化を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (256.3 mm/年) [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.5913000106811523,
+        "timestamp": "2026-02-13T03:56:36.987316",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9619805492975,
+          35.30835805780848
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0046",
+        "score": 49,
+        "level": "yellow",
+        "message": "【注意】監視強化を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (256.3 mm/年) [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.5913000106811523,
+        "timestamp": "2026-02-13T03:56:36.987744",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9720755275517,
+          35.331094833753944
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0048",
+        "score": 49,
+        "level": "yellow",
+        "message": "【注意】監視強化を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (256.3 mm/年) [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.5913000106811523,
+        "timestamp": "2026-02-13T03:56:36.987919",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.22369196518898,
+          35.35038860233157
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0083",
+        "score": 49,
+        "level": "yellow",
+        "message": "【注意】監視強化を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (-23.1 mm/年) | ⚠ 変動が加速中 [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.724884033203125,
+        "timestamp": "2026-02-13T03:56:37.045970",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.2302537933614,
+          35.350837158213494
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0084",
+        "score": 49,
+        "level": "yellow",
+        "message": "【注意】監視強化を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (-23.1 mm/年) | ⚠ 変動が加速中 [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.724884033203125,
+        "timestamp": "2026-02-13T03:56:37.046066",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.90873944284024,
+          35.235604562927016
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0045",
+        "score": 48,
+        "level": "yellow",
+        "message": "【注意】監視強化を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (256.3 mm/年) [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.5913000106811523,
+        "timestamp": "2026-02-13T03:56:36.987629",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9724895359094,
+          35.32390563371453
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0047",
+        "score": 48,
+        "level": "yellow",
+        "message": "【注意】監視強化を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (256.3 mm/年) [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.5913000106811523,
+        "timestamp": "2026-02-13T03:56:36.987835",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9801091458433,
+          35.345366194999194
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0049",
+        "score": 48,
+        "level": "yellow",
+        "message": "【注意】監視強化を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (256.3 mm/年) [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.5913000106811523,
+        "timestamp": "2026-02-13T03:56:36.987999",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.23995224579556,
+          35.354929033987325
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0085",
+        "score": 48,
+        "level": "yellow",
+        "message": "【注意】監視強化を推奨します | 主要因: 地盤変動 | ⚠ 変動速度大 (-23.1 mm/年) | ⚠ 変動が加速中 [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.724884033203125,
+        "timestamp": "2026-02-13T03:56:37.046149",
+        "is_reliable": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.04167995935688,
+          34.76138591713259
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0001",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.21) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.21062932908535004,
+        "timestamp": "2026-02-13T03:56:36.904683",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.04814811523045,
+          34.76029325427103
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0002",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.21) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.21062932908535004,
+        "timestamp": "2026-02-13T03:56:36.905065",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0541653417599,
+          34.75808515038192
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0003",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.21) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.21062932908535004,
+        "timestamp": "2026-02-13T03:56:36.905163",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.12598203274806,
+          34.75482950989368
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0004",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.21) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.21062932908535004,
+        "timestamp": "2026-02-13T03:56:36.905247",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.18515029545787,
+          34.75504941712569
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0005",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.21) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.21062932908535004,
+        "timestamp": "2026-02-13T03:56:36.905320",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2061594567572,
+          34.763144715719086
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0006",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.21) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.21062932908535004,
+        "timestamp": "2026-02-13T03:56:36.905394",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.217818998128,
+          34.76775027269462
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0007",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.21) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.21062932908535004,
+        "timestamp": "2026-02-13T03:56:36.905464",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2228826301838,
+          34.77117415328193
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0008",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.21) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.21062932908535004,
+        "timestamp": "2026-02-13T03:56:36.905564",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.23005034854194,
+          34.78361279947856
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0009",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.21) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.21062932908535004,
+        "timestamp": "2026-02-13T03:56:36.905639",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.32523569095474,
+          34.89119360672614
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0010",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.17) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.17010116577148438,
+        "timestamp": "2026-02-13T03:56:36.905711",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.33063723775496,
+          34.89428002790257
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0011",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.17) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.17010116577148438,
+        "timestamp": "2026-02-13T03:56:36.905780",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.336154948019,
+          34.89984016613878
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0012",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.17) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.17010116577148438,
+        "timestamp": "2026-02-13T03:56:36.905848",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.33902836550337,
+          34.90470190160535
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0013",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.17) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.17010116577148438,
+        "timestamp": "2026-02-13T03:56:36.905915",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.34160001493348,
+          34.90968033556452
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0014",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.17) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.17010116577148438,
+        "timestamp": "2026-02-13T03:56:36.905982",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.34399551195781,
+          34.91471646770937
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0015",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.17) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.17010116577148438,
+        "timestamp": "2026-02-13T03:56:36.906049",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.34665395567595,
+          34.91965392739202
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0016",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.17) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.17010116577148438,
+        "timestamp": "2026-02-13T03:56:36.906116",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.49295910578223,
+          35.04704382272969
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0017",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.27) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.2689881920814514,
+        "timestamp": "2026-02-13T03:56:36.984375",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.49882360569106,
+          35.04934021074875
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0018",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.27) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.2689881920814514,
+        "timestamp": "2026-02-13T03:56:36.984507",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.50464740085303,
+          35.05180485415135
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0019",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.27) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.2689881920814514,
+        "timestamp": "2026-02-13T03:56:36.984585",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.51117469735118,
+          35.05258127719061
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0020",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.27) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.2689881920814514,
+        "timestamp": "2026-02-13T03:56:36.984655",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.51838007076816,
+          35.056407558678345
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0021",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.27) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.2689881920814514,
+        "timestamp": "2026-02-13T03:56:36.984723",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.52989264208966,
+          35.06709944491903
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0022",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.27) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.2689881920814514,
+        "timestamp": "2026-02-13T03:56:36.984790",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.53819921464597,
+          35.06933596889153
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0023",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.27) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.2689881920814514,
+        "timestamp": "2026-02-13T03:56:36.984864",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.57739043951568,
+          35.11418721342744
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0024",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.984929",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.58325913805433,
+          35.1164080991277
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0025",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.984995",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.58973981947614,
+          35.11734808341124
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0026",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.985060",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.59565558358173,
+          35.11973055465766
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0027",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.985124",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.602102652434,
+          35.12081881046595
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0028",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.985189",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.60746654003103,
+          35.12392492251306
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0029",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.985254",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.61446183338626,
+          35.13978038666359
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0030",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.985318",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.61441882235962,
+          35.146934336313045
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0031",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.985384",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.61739487403136,
+          35.15370762209405
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0032",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.985448",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.75129197070567,
+          35.160153153086014
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0033",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986115",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.76160755353703,
+          35.157053232837235
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0034",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986187",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7765354007451,
+          35.15405472824514
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0035",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986252",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7949984273394,
+          35.149134
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0036",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986316",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.8057121168155,
+          35.147230922775684
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0037",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986380",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.81882846494887,
+          35.14791455655733
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0038",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986445",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.86085681764666,
+          35.14598295658358
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0039",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986510",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.87503120115034,
+          35.154231153775065
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0040",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986575",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.8910576540307,
+          35.166136011872844
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0041",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986640",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.8996174753667,
+          35.1801635740552
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0042",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986708",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.90333265341553,
+          35.19408813727094
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0043",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.10837270319461823,
+        "timestamp": "2026-02-13T03:56:36.986771",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.98274126331762,
+          35.3502715833034
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0050",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:36.988074",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.98568063941264,
+          35.354936664502304
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0051",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:36.988145",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.99010484979232,
+          35.358787675656444
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0052",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:36.988213",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9964504434593,
+          35.35779505308521
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0053",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:36.988281",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.00236699064425,
+          35.3563193734973
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0054",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.043798",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.00799217509072,
+          35.355308487182604
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0055",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044025",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.01362813428534,
+          35.35791799381974
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0056",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044094",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.01922364376935,
+          35.36074714911521
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0057",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044168",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.02342878754496,
+          35.36487314921141
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0058",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044235",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0268690794174,
+          35.36920214782547
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0059",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044302",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0333120620693,
+          35.3689863926928
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0060",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044385",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.03922972733739,
+          35.370877821633506
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0061",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044451",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.04564711792182,
+          35.36965387789407
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0062",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044517",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.05436355290843,
+          35.36865194120666
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0063",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044583",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.06087612029316,
+          35.36791691852378
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0064",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044649",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.06627741566746,
+          35.364877644515275
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0065",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044721",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.07468968384256,
+          35.36275726628786
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0066",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044819",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.08086506675338,
+          35.36437045594818
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0067",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044884",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.08725413644015,
+          35.365081258772946
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0068",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.044949",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.09333764161283,
+          35.36693805986998
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0069",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.045014",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.09972330457862,
+          35.367314200054416
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0070",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.045078",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.10287047565984,
+          35.36273282138
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0071",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.045142",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.1079061705213,
+          35.35936349762683
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0072",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.045208",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.11321974524904,
+          35.35618137439576
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0073",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.11) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.11028334498405457,
+        "timestamp": "2026-02-13T03:56:37.045273",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.12157518497537,
+          35.353957893818716
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0074",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.23) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.23335477709770203,
+        "timestamp": "2026-02-13T03:56:37.045339",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.13186551068358,
+          35.35095573534465
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0075",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.23) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.23335477709770203,
+        "timestamp": "2026-02-13T03:56:37.045404",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.13828137704985,
+          35.34973295883294
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0076",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.23) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.23335477709770203,
+        "timestamp": "2026-02-13T03:56:37.045469",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.14700945386423,
+          35.34888298566433
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0077",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.23) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.23335477709770203,
+        "timestamp": "2026-02-13T03:56:37.045533",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.15291860497376,
+          35.34655216564388
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0078",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.23) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.23335477709770203,
+        "timestamp": "2026-02-13T03:56:37.045608",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.15921758828316,
+          35.34156537685367
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0079",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.23) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.23335477709770203,
+        "timestamp": "2026-02-13T03:56:37.045673",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.16768726951926,
+          35.34009744310208
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0080",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.07) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.06672926247119904,
+        "timestamp": "2026-02-13T03:56:37.045737",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.17618610437648,
+          35.33835543659916
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0081",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.07) - 信頼性が低い [東名: SAR+DEM+気象+地質+履歴]",
+        "coherence": 0.06672926247119904,
+        "timestamp": "2026-02-13T03:56:37.045801",
+        "is_reliable": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.20169657319232,
+          35.34214272518806
+        ]
+      },
+      "properties": {
+        "segment_id": "TOMEI_0082",
+        "score": 0,
+        "level": "green",
+        "message": "コヒーレンス低下 (0.07) - 信頼性が低い [東名: SAR+DEM+気象+地質]",
+        "coherence": 0.06672926247119904,
+        "timestamp": "2026-02-13T03:56:37.045865",
+        "is_reliable": false
+      }
+    }
+  ]
+}

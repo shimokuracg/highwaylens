@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph id="InSAR_Fixed">
+    <version>1.0</version>
+
+    <node id="Read-Master">
+        <operator>Read</operator>
+        <sources/>
+        <parameters>
+            <file>${masterFile}</file>
+        </parameters>
+    </node>
+
+    <node id="Read-Slave">
+        <operator>Read</operator>
+        <sources/>
+        <parameters>
+            <file>${slaveFile}</file>
+        </parameters>
+    </node>
+
+    <node id="Split-Master">
+        <operator>TOPSAR-Split</operator>
+        <sources>
+            <sourceProduct refid="Read-Master"/>
+        </sources>
+        <parameters>
+            <subswath>IW2</subswath>
+            <selectedPolarisations>VV</selectedPolarisations>
+        </parameters>
+    </node>
+
+    <node id="Split-Slave">
+        <operator>TOPSAR-Split</operator>
+        <sources>
+            <sourceProduct refid="Read-Slave"/>
+        </sources>
+        <parameters>
+            <subswath>IW2</subswath>
+            <selectedPolarisations>VV</selectedPolarisations>
+        </parameters>
+    </node>
+
+    <node id="Orbit-Master">
+        <operator>Apply-Orbit-File</operator>
+        <sources>
+            <sourceProduct refid="Split-Master"/>
+        </sources>
+        <parameters>
+            <orbitType>Sentinel Precise (Auto Download)</orbitType>
+            <continueOnFail>true</continueOnFail>
+        </parameters>
+    </node>
+
+    <node id="Orbit-Slave">
+        <operator>Apply-Orbit-File</operator>
+        <sources>
+            <sourceProduct refid="Split-Slave"/>
+        </sources>
+        <parameters>
+            <orbitType>Sentinel Precise (Auto Download)</orbitType>
+            <continueOnFail>true</continueOnFail>
+        </parameters>
+    </node>
+
+    <node id="BackGeocoding">
+        <operator>Back-Geocoding</operator>
+        <sources>
+            <sourceProduct refid="Orbit-Master"/>
+            <sourceProduct.1 refid="Orbit-Slave"/>
+        </sources>
+        <parameters>
+            <demName>SRTM 3Sec</demName>
+            <demResamplingMethod>BILINEAR_INTERPOLATION</demResamplingMethod>
+            <resamplingType>BILINEAR_INTERPOLATION</resamplingType>
+            <maskOutAreaWithoutElevation>false</maskOutAreaWithoutElevation>
+            <outputDerampDemodPhase>true</outputDerampDemodPhase>
+        </parameters>
+    </node>
+
+    <node id="Interferogram">
+        <operator>Interferogram</operator>
+        <sources>
+            <sourceProduct refid="BackGeocoding"/>
+        </sources>
+        <parameters>
+            <subtractFlatEarthPhase>true</subtractFlatEarthPhase>
+            <includeCoherence>true</includeCoherence>
+            <cohWinAz>5</cohWinAz>
+            <cohWinRg>20</cohWinRg>
+        </parameters>
+    </node>
+
+    <node id="Deburst">
+        <operator>TOPSAR-Deburst</operator>
+        <sources>
+            <sourceProduct refid="Interferogram"/>
+        </sources>
+        <parameters>
+            <selectedPolarisations>VV</selectedPolarisations>
+        </parameters>
+    </node>
+
+    <node id="Write">
+        <operator>Write</operator>
+        <sources>
+            <sourceProduct refid="Deburst"/>
+        </sources>
+        <parameters>
+            <file>${outputFile}</file>
+            <formatName>BEAM-DIMAP</formatName>
+        </parameters>
+    </node>
+</graph>

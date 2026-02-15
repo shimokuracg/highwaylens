@@ -1,0 +1,91 @@
+# SlopeGuard Configuration
+# ========================
+
+project:
+  name: "SlopeGuard"
+  version: "0.1.0"
+  description: "Highway Slope Failure Prediction System"
+
+# Area of Interest (Central Expressway: Otsuki - Suwa)
+aoi:
+  name: "Central Expressway Pilot"
+  # Bounding box [min_lon, min_lat, max_lon, max_lat]
+  bbox: [138.4, 35.5, 138.9, 36.1]
+  # Or use GeoJSON file
+  geojson_path: null
+
+# Data Sources
+data:
+  sentinel1:
+    platform: "Sentinel-1"
+    product_type: "SLC"
+    beam_mode: "IW"
+    polarization: "VV"
+    orbit_direction: "DESCENDING"  # or ASCENDING
+
+  dem:
+    source: "ALOS_AW3D30"
+    resolution: 30  # meters
+
+  weather:
+    source: "JMA"
+    update_interval: 600  # seconds (10 min)
+
+# Processing Parameters
+processing:
+  insar:
+    # Interferogram settings
+    looks_range: 8
+    looks_azimuth: 2
+    coherence_threshold: 0.3
+
+    # Time series settings
+    min_temporal_baseline: 12  # days
+    max_temporal_baseline: 180  # days
+
+  geocoding:
+    output_resolution: 30  # meters
+
+# Risk Model Parameters
+risk_model:
+  weights:
+    deformation_rate: 0.35
+    deformation_acceleration: 0.20
+    slope_angle: 0.15
+    rainfall_factor: 0.15
+    geology_factor: 0.10
+    historical_factor: 0.05
+
+  thresholds:
+    green_max: 25
+    yellow_max: 50
+    orange_max: 75
+    # Above 75 = red
+
+  deformation:
+    # mm/year thresholds
+    low: 5
+    medium: 15
+    high: 30
+
+# Alert Settings
+alerts:
+  enabled: true
+  rapid_increase_threshold: 20  # score increase triggers escalation
+  notification:
+    email: false
+    push: false
+
+# Output Paths
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  data_external: "data/external"
+  output: "output"
+  logs: "logs"
+
+# API Settings
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: true

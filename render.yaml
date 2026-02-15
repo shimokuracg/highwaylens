@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: highwaylens
+    runtime: docker
+    plan: free
+    envVars:
+      - key: APP_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: GEMINI_API_KEY
+        sync: false
