@@ -876,8 +876,8 @@
 
             <div class="alert-section">
                 <div class="sidebar-tabs">
-                    <button class="sidebar-tab active" id="sidebar-tab-alerts" onclick="switchSidebarTab('alerts')">⚠️ 対応箇所</button>
-                    <button class="sidebar-tab" id="sidebar-tab-inspections" onclick="switchSidebarTab('inspections')">📋 点検記録</button>
+                    <button class="sidebar-tab active" id="sidebar-tab-alerts" onclick="switchSidebarTab('alerts')">⚠️</button>
+                    <button class="sidebar-tab" id="sidebar-tab-inspections" onclick="switchSidebarTab('inspections')">📋</button>
                 </div>
                 <div id="tab-alerts">
                     <div class="alert-header">
@@ -937,7 +937,7 @@
     <!-- Chat Slide-out Panel -->
     <div class="chat-panel" id="chat-panel">
         <div class="chat-panel-header">
-            <div class="chat-panel-title" id="chat-title">AI Assistant</div>
+            <div class="chat-panel-title" id="chat-title"></div>
             <div style="display:flex;align-items:center;gap:8px;">
                 <div class="chat-model-switch" id="chat-model-switch">
                     <button class="chat-model-btn active" data-model="fast" onclick="setChatModel('fast')">Flash</button>
@@ -948,51 +948,51 @@
         </div>
         <div class="chat-messages" id="chat-messages">
             <div class="chat-suggest" id="chat-suggest">
-                <div style="font-size:13px;color:#666;margin-bottom:4px;" id="chat-suggest-label">質問してみましょう:</div>
-                <button class="chat-suggest-btn" onclick="sendSuggestion(this.textContent)">赤レベルのセグメントをまとめて</button>
-                <button class="chat-suggest-btn" onclick="sendSuggestion(this.textContent)">新東名で最もリスクが高い箇所は？</button>
-                <button class="chat-suggest-btn" onclick="sendSuggestion(this.textContent)">全体の監視状況を教えて</button>
+                <div style="font-size:13px;color:#666;margin-bottom:4px;" id="chat-suggest-label"></div>
+                <button class="chat-suggest-btn" id="chat-suggest-1" onclick="sendSuggestion(this.textContent)"></button>
+                <button class="chat-suggest-btn" id="chat-suggest-2" onclick="sendSuggestion(this.textContent)"></button>
+                <button class="chat-suggest-btn" id="chat-suggest-3" onclick="sendSuggestion(this.textContent)"></button>
             </div>
         </div>
         <div class="chat-input-area">
-            <textarea class="chat-input" id="chat-input" placeholder="メッセージを入力..." rows="1" onkeydown="if(event.key==='Enter'&&!event.shiftKey&&!chatBusy){event.preventDefault();sendChatMessage();}"></textarea>
-            <button class="chat-send-btn" id="chat-send" onclick="sendChatMessage()">送信</button>
+            <textarea class="chat-input" id="chat-input" placeholder="" rows="1" onkeydown="if(event.key==='Enter'&&!event.shiftKey&&!chatBusy){event.preventDefault();sendChatMessage();}"></textarea>
+            <button class="chat-send-btn" id="chat-send" onclick="sendChatMessage()"></button>
         </div>
     </div>
 
     <!-- Inspection Modal -->
     <div class="modal-overlay" id="inspection-modal">
         <div class="modal-content">
-            <div class="modal-title" id="modal-inspection-title">点検記録</div>
+            <div class="modal-title" id="modal-inspection-title"></div>
             <input type="hidden" id="inspection-segment-id">
             <div class="modal-field">
-                <label class="modal-label" id="label-inspector">点検者</label>
+                <label class="modal-label" id="label-inspector"></label>
                 <input class="modal-input" id="inspection-inspector" type="text">
             </div>
             <div class="modal-field">
-                <label class="modal-label" id="label-date">点検日</label>
+                <label class="modal-label" id="label-date"></label>
                 <input class="modal-input" id="inspection-date" type="date">
             </div>
             <div class="modal-field">
-                <label class="modal-label" id="label-weather">天候</label>
+                <label class="modal-label" id="label-weather"></label>
                 <input class="modal-input" id="inspection-weather" type="text">
             </div>
             <div class="modal-field">
-                <label class="modal-label" id="label-condition">状態</label>
+                <label class="modal-label" id="label-condition"></label>
                 <select class="modal-select" id="inspection-condition">
-                    <option value="good">良好 (Good)</option>
-                    <option value="fair">普通 (Fair)</option>
-                    <option value="poor">不良 (Poor)</option>
-                    <option value="critical">危険 (Critical)</option>
+                    <option value="good"></option>
+                    <option value="fair"></option>
+                    <option value="poor"></option>
+                    <option value="critical"></option>
                 </select>
             </div>
             <div class="modal-field">
-                <label class="modal-label" id="label-findings">所見</label>
+                <label class="modal-label" id="label-findings"></label>
                 <textarea class="modal-textarea" id="inspection-findings"></textarea>
             </div>
             <div class="modal-buttons">
-                <button class="modal-btn secondary" onclick="closeInspectionModal()" id="btn-cancel">キャンセル</button>
-                <button class="modal-btn primary" onclick="submitInspection()" id="btn-submit-inspection">登録</button>
+                <button class="modal-btn secondary" onclick="closeInspectionModal()" id="btn-cancel"></button>
+                <button class="modal-btn primary" onclick="submitInspection()" id="btn-submit-inspection"></button>
             </div>
         </div>
     </div>
@@ -1058,7 +1058,15 @@
                 conditionGood: '良好',
                 conditionFair: '普通',
                 conditionPoor: '不良',
-                conditionCritical: '危険'
+                conditionCritical: '危険',
+                chatSuggest1: '赤レベルのセグメントをまとめて',
+                chatSuggest2: '新東名で最もリスクが高い箇所は？',
+                chatSuggest3: '全体の監視状況を教えて',
+                chatAskAbout: 'の状況を教えて',
+                chatError: 'エラー',
+                notAvailable: 'N/A',
+                mapLayerSatellite: '衛星画像',
+                mapLayerStreet: '地図'
             },
             en: {
                 observationDate: 'Observation: Jan 26 - Feb 7, 2026',
@@ -1116,7 +1124,15 @@
                 conditionGood: 'Good',
                 conditionFair: 'Fair',
                 conditionPoor: 'Poor',
-                conditionCritical: 'Critical'
+                conditionCritical: 'Critical',
+                chatSuggest1: 'Summarize red-level segments',
+                chatSuggest2: 'Highest risk area on Shin-Tomei?',
+                chatSuggest3: 'Overall monitoring status',
+                chatAskAbout: ' - Tell me the status',
+                chatError: 'Error',
+                notAvailable: 'N/A',
+                mapLayerSatellite: 'Satellite',
+                mapLayerStreet: 'Street'
             }
         };
 
@@ -1171,9 +1187,54 @@
                 loadingText.textContent = t('loading');
             }
 
+            // Sidebar tabs
+            document.getElementById('sidebar-tab-alerts').textContent = '⚠️ ' + t('alertsTab');
+            document.getElementById('sidebar-tab-inspections').textContent = '📋 ' + t('inspectionTab');
+
+            // Chat panel
+            document.getElementById('chat-title').textContent = t('chatTitle');
+            document.getElementById('chat-suggest-label').textContent = t('chatSuggestLabel');
+            document.getElementById('chat-suggest-1').textContent = t('chatSuggest1');
+            document.getElementById('chat-suggest-2').textContent = t('chatSuggest2');
+            document.getElementById('chat-suggest-3').textContent = t('chatSuggest3');
+            document.getElementById('chat-input').placeholder = t('chatPlaceholder');
+            document.getElementById('chat-send').textContent = t('chatSend');
+
+            // Inspection modal
+            document.getElementById('modal-inspection-title').textContent = t('inspectionTitle');
+            document.getElementById('label-inspector').textContent = t('inspectorLabel');
+            document.getElementById('label-date').textContent = t('dateLabel');
+            document.getElementById('label-weather').textContent = t('weatherLabel');
+            document.getElementById('label-condition').textContent = t('conditionLabel');
+            document.getElementById('label-findings').textContent = t('findingsLabel');
+            document.getElementById('btn-cancel').textContent = t('cancelBtn');
+            document.getElementById('btn-submit-inspection').textContent = t('submitBtn');
+
+            // Condition select options
+            const condSelect = document.getElementById('inspection-condition');
+            const condKeys = ['good', 'fair', 'poor', 'critical'];
+            const condTransKeys = ['conditionGood', 'conditionFair', 'conditionPoor', 'conditionCritical'];
+            condSelect.querySelectorAll('option').forEach((opt, i) => {
+                opt.textContent = t(condTransKeys[i]);
+            });
+
+            // Map layer names
+            updateMapLayerNames();
+
             // Refresh markers with new language
             if (allSegments.length > 0) {
                 refreshMarkers();
+            }
+        }
+
+        function updateMapLayerNames() {
+            const layerControl = document.querySelector('.leaflet-control-layers-base');
+            if (layerControl) {
+                const labels = layerControl.querySelectorAll('label span');
+                if (labels.length >= 2) {
+                    labels[0].lastChild.textContent = ' ' + t('mapLayerSatellite');
+                    labels[1].lastChild.textContent = ' ' + t('mapLayerStreet');
+                }
             }
         }
 
@@ -1393,6 +1454,7 @@
                 // Weather
                 '大雨の影響あり': 'Heavy rain impact',
                 '降雨の影響あり': 'Rainfall impact',
+                '降雨なし': 'No rainfall',
                 '乾燥状態': 'Dry conditions',
                 // Geology
                 '花崗岩（安定）': 'Granite (stable)',
@@ -1403,6 +1465,7 @@
                 '火山灰（要注意）': 'Volcanic ash (attention needed)',
                 '沖積層（普通）': 'Alluvial (normal)',
                 '上下線共有': 'Both directions',
+                '上下線無関係': 'N/A (direction)',
                 '上り線': 'Upbound',
                 '下り線': 'Downbound'
             };
@@ -1441,6 +1504,7 @@
                 '地質調査データより': 'From geological survey data',
                 'NEXCO管理データより': 'From NEXCO management data',
                 '地形・気象・地質・履歴による暫定評価': 'Provisional assessment from terrain, weather, geology & history',
+                '地形・気象・地質による暫定評価': 'Provisional assessment from terrain, weather & geology',
                 'InSARデータを収集中です': 'Collecting InSAR data'
             };
 
@@ -1458,6 +1522,11 @@
 
             // Pattern: 傾斜角 N°
             result = result.replace(/傾斜角\s*([\d.]+)°/g, 'Slope angle: $1°');
+
+            // Pattern: 24時間 Nmm (観測所名)
+            result = result.replace(/24時間\s*([\d.]+)mm\s*(?:\(([^)]+)\))?/g, (m, mm, station) =>
+                station ? `${mm}mm in 24h (${station})` : `${mm}mm in 24h`
+            );
 
             // Pattern: 48時間で Nmm
             result = result.replace(/48時間で\s*([\d.]+)mm/g, '$1mm in 48 hours');
@@ -1571,7 +1640,7 @@
                     </div>
                     <div class="popup-actions-bar">
                         <button class="popup-action-btn" onclick="openInspectionModal('${sid}')">📋 ${t('inspectionBtn')}</button>
-                        <button class="popup-action-btn" onclick="toggleChatPanel(); sendSuggestion('${sid}の状況を教えて')">💬 AI</button>
+                        <button class="popup-action-btn" onclick="toggleChatPanel(); sendSuggestion('${sid}' + t('chatAskAbout'))">💬 AI</button>
                     </div>
                     <div class="popup-inspections-section">
                         <div class="popup-inspections-title">📋 ${t('inspectionHistory')}</div>
@@ -1806,7 +1875,7 @@
                 appendChatMsg('assistant', data.reply, data.segment_ids);
             } catch (e) {
                 removeChatMsg(thinkingId);
-                appendChatMsg('assistant', 'Error: ' + e.message);
+                appendChatMsg('assistant', t('chatError') + ': ' + e.message);
             }
 
             // Unlock UI
@@ -1898,7 +1967,7 @@
                     container.innerHTML = inspections.map(ins => `
                         <div class="popup-inspection-item cond-${ins.condition}">
                             <div class="popup-inspection-meta">
-                                ${ins.date} | ${ins.inspector || 'N/A'} | ${ins.weather || ''}
+                                ${ins.date} | ${ins.inspector || t('notAvailable')} | ${ins.weather || ''}
                                 <span class="popup-inspection-badge ${ins.condition}">${getConditionLabel(ins.condition)}</span>
                             </div>
                             ${ins.findings ? `<div class="popup-inspection-findings">${ins.findings}</div>` : ''}
@@ -1995,7 +2064,7 @@
                                 <div class="sidebar-inspection-location">📍 ${formatSegmentName(ins.segment_id)}</div>
                                 <span class="sidebar-inspection-badge ${ins.condition}">${getConditionLabel(ins.condition)}</span>
                             </div>
-                            <div class="sidebar-inspection-meta">${ins.date} | ${ins.inspector || 'N/A'} | ${ins.weather || ''}</div>
+                            <div class="sidebar-inspection-meta">${ins.date} | ${ins.inspector || t('notAvailable')} | ${ins.weather || ''}</div>
                             ${ins.findings ? `<div class="sidebar-inspection-findings">${ins.findings}</div>` : ''}
                         </div>
                     `;
