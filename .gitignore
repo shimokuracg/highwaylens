@@ -38,6 +38,11 @@ data/processed/*
 !data/dem/
 data/dem/*
 !data/dem/*.zip
+# Keep expressway route cache for Render deployment
+!data/external/
+data/external/*
+!data/external/tomei_expressway.json
+!data/external/shintomei_expressway.json
 
 # OS
 .DS_Store
