@@ -622,8 +622,13 @@ class MLITHighwayLoader:
 
     CACHE_DIR = Path(__file__).parent.parent.parent / "data" / "external"
 
-    # Shin-Tomei spur / ramp section codes to exclude
-    SHINTOMEI_EXCLUDE = {"EA02_022008", "EA02_022018", "EA02_022019"}
+    # Shin-Tomei section codes to exclude:
+    # 022003-022006: 伊勢湾岸自動車道区間 (west of 豊田東JCT, lon < 137.15)
+    # 022008, 022018, 022019: spur / ramp sections
+    SHINTOMEI_EXCLUDE = {
+        "EA02_022003", "EA02_022004", "EA02_022005", "EA02_022006",
+        "EA02_022008", "EA02_022018", "EA02_022019",
+    }
 
     def __init__(self):
         self.CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -789,15 +794,83 @@ class MLITHighwayLoader:
                 changed = True
 
         if remaining:
-            logger.warning(
-                f"MLIT: {len(remaining)} segments could not be chained"
+            logger.info(
+                f"MLIT: {len(remaining)} segments not connected to "
+                f"main chain (gap sections kept separate)"
             )
 
-        # Final west→east orientation
+        # Build list of all chains: main chain + remaining as separate chains
+        chains: List[List[Tuple[float, float]]] = []
+
+        # Main chain
         if chain[0][0] > chain[-1][0]:
             chain = list(reversed(chain))
+        chains.append(chain)
 
-        return chain
+        # Chain remaining segments among themselves
+        if remaining:
+            sub_segs = [segments[i] for i in remaining]
+            # Orient west→east and sort
+            for i, seg in enumerate(sub_segs):
+                if seg[0][0] > seg[-1][0]:
+                    sub_segs[i] = list(reversed(seg))
+            sub_segs.sort(key=lambda s: s[0][0])
+
+            # Greedy-chain sub-segments (tight threshold)
+            sub_chain = list(sub_segs[0])
+            sub_remaining = list(range(1, len(sub_segs)))
+            changed = True
+            while changed and sub_remaining:
+                changed = False
+                best_idx = None
+                best_dist = float("inf")
+                best_end = None
+                best_reverse = False
+                for i in sub_remaining:
+                    seg = sub_segs[i]
+                    candidates = [
+                        (self._pt_distance(sub_chain[-1], seg[0]), i, "end", False),
+                        (self._pt_distance(sub_chain[-1], seg[-1]), i, "end", True),
+                        (self._pt_distance(sub_chain[0], seg[-1]), i, "start", False),
+                        (self._pt_distance(sub_chain[0], seg[0]), i, "start", True),
+                    ]
+                    for d, idx, end, rev in candidates:
+                        if d < best_dist:
+                            best_dist = d
+                            best_idx = idx
+                            best_end = end
+                            best_reverse = rev
+                if best_idx is not None and best_dist < 0.05:
+                    seg = sub_segs[best_idx]
+                    if best_reverse:
+                        seg = list(reversed(seg))
+                    if best_end == "end":
+                        sub_chain.extend(seg)
+                    else:
+                        sub_chain = seg + sub_chain
+                    sub_remaining.remove(best_idx)
+                    changed = True
+
+            if sub_chain[0][0] > sub_chain[-1][0]:
+                sub_chain = list(reversed(sub_chain))
+            chains.append(sub_chain)
+
+            # Any still-remaining segments as individual chains
+            for i in sub_remaining:
+                seg = sub_segs[i]
+                if seg[0][0] > seg[-1][0]:
+                    seg = list(reversed(seg))
+                chains.append(seg)
+
+        # Sort chains west→east
+        chains.sort(key=lambda c: c[0][0])
+
+        logger.info(
+            f"MLIT: {len(chains)} chain(s), "
+            + ", ".join(f"{len(c)} pts" for c in chains)
+        )
+
+        return chains
 
     @staticmethod
     def _pt_distance(
@@ -808,7 +881,7 @@ class MLITHighwayLoader:
     def _save_cache(
         self,
         path: Path,
-        coords: List[Tuple[float, float]],
+        segments: List[List[Tuple[float, float]]],
         name_ja: str,
         name_en: str,
         ref: str,
@@ -820,25 +893,30 @@ class MLITHighwayLoader:
                     "name": name_ja,
                     "name_en": name_en,
                     "ref": ref,
-                    "coordinates": coords,
-                    "count": len(coords),
+                    "segments": segments,
+                    "count": sum(len(s) for s in segments),
                 },
                 f,
                 indent=2,
             )
-        logger.info(f"Cached {len(coords)} coordinates → {path}")
+        logger.info(
+            f"Cached {len(segments)} segment(s) "
+            f"({sum(len(s) for s in segments)} pts) → {path}"
+        )
 
     # ------------------------------------------------------------------
     # Public API
     # ------------------------------------------------------------------
 
-    def get_tomei_expressway(self) -> Optional[List[Tuple[float, float]]]:
+    def get_tomei_expressway(
+        self,
+    ) -> Optional[List[List[Tuple[float, float]]]]:
         """
         Get Tomei Expressway (第一東海自動車道) from MLIT N06-24.
 
         Returns:
-            List of (lon, lat) coordinates west-to-east, or None if
-            the GeoJSON file is not available.
+            List of segments, each a list of (lon, lat) coordinates
+            west-to-east, or None if the GeoJSON file is not available.
         """
         cache_file = self.CACHE_DIR / "tomei_expressway.json"
 
@@ -848,34 +926,41 @@ class MLITHighwayLoader:
                 data = json.load(f)
             if data.get("source") == "MLIT N06-24":
                 logger.info("Loading Tomei (MLIT) from cache...")
-                return [tuple(c) for c in data["coordinates"]]
+                # Support both old "coordinates" and new "segments" format
+                if "segments" in data:
+                    return [[tuple(c) for c in seg] for seg in data["segments"]]
+                return [[tuple(c) for c in data["coordinates"]]]
 
         features = self._filter_features("第一東海自動車道")
         if not features:
             return None
 
-        coords = self._chain_segments(features)
-        if not coords:
+        segments = self._chain_segments(features)
+        if not segments:
             return None
 
-        lons = [c[0] for c in coords]
+        all_coords = [c for seg in segments for c in seg]
+        lons = [c[0] for c in all_coords]
         logger.info(
-            f"MLIT Tomei: {len(coords)} points, "
+            f"MLIT Tomei: {len(segments)} segment(s), "
+            f"{len(all_coords)} points, "
             f"lon {min(lons):.4f}→{max(lons):.4f}"
         )
 
         self._save_cache(
-            cache_file, coords, "東名高速道路", "Tomei Expressway", "E1"
+            cache_file, segments, "東名高速道路", "Tomei Expressway", "E1"
         )
-        return coords
+        return segments
 
-    def get_shintomei_expressway(self) -> Optional[List[Tuple[float, float]]]:
+    def get_shintomei_expressway(
+        self,
+    ) -> Optional[List[List[Tuple[float, float]]]]:
         """
         Get Shin-Tomei Expressway (第二東海自動車道) from MLIT N06-24.
 
         Returns:
-            List of (lon, lat) coordinates west-to-east, or None if
-            the GeoJSON file is not available.
+            List of segments, each a list of (lon, lat) coordinates
+            west-to-east, or None if the GeoJSON file is not available.
         """
         cache_file = self.CACHE_DIR / "shintomei_expressway.json"
 
@@ -885,7 +970,9 @@ class MLITHighwayLoader:
                 data = json.load(f)
             if data.get("source") == "MLIT N06-24":
                 logger.info("Loading Shin-Tomei (MLIT) from cache...")
-                return [tuple(c) for c in data["coordinates"]]
+                if "segments" in data:
+                    return [[tuple(c) for c in seg] for seg in data["segments"]]
+                return [[tuple(c) for c in data["coordinates"]]]
 
         features = self._filter_features(
             "第二東海自動車道", exclude_codes=self.SHINTOMEI_EXCLUDE
@@ -893,52 +980,54 @@ class MLITHighwayLoader:
         if not features:
             return None
 
-        coords = self._chain_segments(features)
-        if not coords:
+        segments = self._chain_segments(features)
+        if not segments:
             return None
 
-        lons = [c[0] for c in coords]
+        all_coords = [c for seg in segments for c in seg]
+        lons = [c[0] for c in all_coords]
         logger.info(
-            f"MLIT Shin-Tomei: {len(coords)} points, "
+            f"MLIT Shin-Tomei: {len(segments)} segment(s), "
+            f"{len(all_coords)} points, "
             f"lon {min(lons):.4f}→{max(lons):.4f}"
         )
 
         self._save_cache(
             cache_file,
-            coords,
+            segments,
             "新東名高速道路",
             "Shin-Tomei Expressway",
             "E1A",
         )
-        return coords
+        return segments
 
 
-def get_tomei_coords() -> List[Tuple[float, float]]:
-    """Get Tomei Expressway coordinates (MLIT → OSM fallback)."""
-    # Try MLIT first
+def get_tomei_segments() -> List[List[Tuple[float, float]]]:
+    """Get Tomei Expressway segments (MLIT → OSM fallback)."""
     mlit = MLITHighwayLoader()
-    coords = mlit.get_tomei_expressway()
-    if coords:
-        return coords
+    segments = mlit.get_tomei_expressway()
+    if segments:
+        return segments
 
-    # Fall back to OSM
+    # Fall back to OSM (returns flat list → wrap in single segment)
     logger.info("MLIT unavailable for Tomei, falling back to OSM")
     osm = OSMHighwayLoader()
-    return osm.get_tomei_expressway()
+    coords = osm.get_tomei_expressway()
+    return [coords] if coords else []
 
 
-def get_shintomei_coords() -> List[Tuple[float, float]]:
-    """Get Shin-Tomei Expressway coordinates (MLIT → OSM fallback)."""
-    # Try MLIT first
+def get_shintomei_segments() -> List[List[Tuple[float, float]]]:
+    """Get Shin-Tomei Expressway segments (MLIT → OSM fallback)."""
     mlit = MLITHighwayLoader()
-    coords = mlit.get_shintomei_expressway()
-    if coords:
-        return coords
+    segments = mlit.get_shintomei_expressway()
+    if segments:
+        return segments
 
-    # Fall back to OSM
+    # Fall back to OSM (returns flat list → wrap in single segment)
     logger.info("MLIT unavailable for Shin-Tomei, falling back to OSM")
     osm = OSMHighwayLoader()
-    return osm.get_shintomei_expressway()
+    coords = osm.get_shintomei_expressway()
+    return [coords] if coords else []
 
 
 if __name__ == "__main__":
@@ -948,22 +1037,18 @@ if __name__ == "__main__":
     print("=== MLIT N06-24: Tomei Expressway (E1) ===")
     tomei = mlit.get_tomei_expressway()
     if tomei:
-        lons = [c[0] for c in tomei]
-        print(f"Points: {len(tomei)}")
-        print(f"Start (west): lon={tomei[0][0]:.4f}, lat={tomei[0][1]:.4f}")
-        print(f"End (east):   lon={tomei[-1][0]:.4f}, lat={tomei[-1][1]:.4f}")
-        print(f"Lon range: {min(lons):.4f} → {max(lons):.4f}")
+        for i, seg in enumerate(tomei):
+            lons = [c[0] for c in seg]
+            print(f"Segment {i}: {len(seg)} pts, lon {min(lons):.4f}→{max(lons):.4f}")
     else:
         print("MLIT data not available")
 
     print("\n=== MLIT N06-24: Shin-Tomei Expressway (E1A) ===")
     shintomei = mlit.get_shintomei_expressway()
     if shintomei:
-        lons = [c[0] for c in shintomei]
-        print(f"Points: {len(shintomei)}")
-        print(f"Start (west): lon={shintomei[0][0]:.4f}, lat={shintomei[0][1]:.4f}")
-        print(f"End (east):   lon={shintomei[-1][0]:.4f}, lat={shintomei[-1][1]:.4f}")
-        print(f"Lon range: {min(lons):.4f} → {max(lons):.4f}")
+        for i, seg in enumerate(shintomei):
+            lons = [c[0] for c in seg]
+            print(f"Segment {i}: {len(seg)} pts, lon {min(lons):.4f}→{max(lons):.4f}")
     else:
         print("MLIT data not available")
 

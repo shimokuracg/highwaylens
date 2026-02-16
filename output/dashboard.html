@@ -1654,7 +1654,9 @@
 
                         for (const [key, route] of Object.entries(routes)) {
                             const style = routeStyles[key] || { color: '#6b7280', label: key, labelEn: key };
-                            const line = L.polyline(route.coordinates, {
+                            // segments: array of polylines (supports gaps)
+                            const coords = route.segments || [route.coordinates];
+                            const line = L.polyline(coords, {
                                 color: style.color,
                                 weight: 3,
                                 opacity: 0.8

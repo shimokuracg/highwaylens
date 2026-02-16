@@ -588,24 +588,29 @@ async def get_statistics():
 @app.get("/api/v1/routes", tags=["Geometry"])
 async def get_expressway_routes():
     """Get expressway route coordinates for map display."""
-    from src.data_acquisition.osm_loader import get_tomei_coords, get_shintomei_coords
+    from src.data_acquisition.osm_loader import get_tomei_segments, get_shintomei_segments
 
     routes = {}
-    tomei = get_tomei_coords()
+    tomei = get_tomei_segments()
     if tomei:
         routes["tomei"] = {
             "name": "東名高速道路",
             "name_en": "Tomei Expressway",
             "ref": "E1",
-            "coordinates": [[c[1], c[0]] for c in tomei],  # [lat, lon] for Leaflet
+            # segments: array of polylines, each [[lat,lon], ...] for Leaflet
+            "segments": [
+                [[c[1], c[0]] for c in seg] for seg in tomei
+            ],
         }
-    shintomei = get_shintomei_coords()
+    shintomei = get_shintomei_segments()
     if shintomei:
         routes["shintomei"] = {
             "name": "新東名高速道路",
             "name_en": "Shin-Tomei Expressway",
             "ref": "E1A",
-            "coordinates": [[c[1], c[0]] for c in shintomei],  # [lat, lon] for Leaflet
+            "segments": [
+                [[c[1], c[0]] for c in seg] for seg in shintomei
+            ],
         }
     return routes
 
