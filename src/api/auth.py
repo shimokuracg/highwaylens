@@ -11,17 +11,21 @@ Environment variables:
 
 import hmac
 import hashlib
+import logging
 import os
 
 from fastapi import Request, Response
 from fastapi.responses import JSONResponse, RedirectResponse
 
+logger = logging.getLogger(__name__)
 
 APP_PASSWORD = os.getenv("APP_PASSWORD", "")
+if not APP_PASSWORD:
+    logger.warning("APP_PASSWORD is not set — login will always fail")
 SESSION_SECRET = os.getenv("SESSION_SECRET", "dev-secret-change-me")
 
 COOKIE_NAME = "session"
-COOKIE_MAX_AGE = 60 * 60 * 24 * 7  # 7 days
+# No max_age → session cookie (expires when browser closes)
 
 # Paths that don't require authentication
 PUBLIC_PATHS = {"/login", "/api/v1/auth/login", "/health", "/docs", "/redoc", "/openapi.json"}
@@ -74,11 +78,10 @@ async def auth_middleware(request: Request, call_next):
 
 
 def set_session_cookie(response: Response) -> Response:
-    """Set authenticated session cookie on response."""
+    """Set session cookie (expires when browser closes)."""
     response.set_cookie(
         key=COOKIE_NAME,
         value=_make_token(),
-        max_age=COOKIE_MAX_AGE,
         httponly=True,
         samesite="lax",
     )
